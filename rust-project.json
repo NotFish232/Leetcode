@@ -40,6 +40,21 @@
             "root_module": "./8.string-to-integer-atoi.rs",
             "edition": "2021",
             "deps": []
+        },
+        {
+            "root_module": "./198.house-robber.rs",
+            "edition": "2021",
+            "deps": []
+        },
+        {
+            "root_module": "./55.jump-game.rs",
+            "edition": "2021",
+            "deps": []
+        },
+        {
+            "root_module": "./45.jump-game-ii.rs",
+            "edition": "2021",
+            "deps": []
         }
     ]
 }
