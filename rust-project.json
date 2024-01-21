@@ -25,7 +25,21 @@
             "root_module": "./5.longest-palindromic-substring.rs",
             "edition": "2021",
             "deps": []
+        },
+        {
+            "root_module": "./6.zigzag-conversion.rs",
+            "edition": "2021",
+            "deps": []
+        },
+        {
+            "root_module": "./7.reverse-integer.rs",
+            "edition": "2021",
+            "deps": []
+        },
+        {
+            "root_module": "./8.string-to-integer-atoi.rs",
+            "edition": "2021",
+            "deps": []
         }
-        
     ]
 }
