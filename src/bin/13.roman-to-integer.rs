@@ -13,7 +13,7 @@ impl Solution {
             (50, "L"),
             (10, "X"),
             (5, "V"),
-            (1, "I")
+            (1, "I"),
         ];
         let mut num = 0;
 
