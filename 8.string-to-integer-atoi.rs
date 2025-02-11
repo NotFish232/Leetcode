@@ -28,6 +28,6 @@ impl Solution {
                 seen_non_digit = true;
             }
         }
-        num as i32 * if is_negative { -1 } else { 1 } 
+        num as i32 * if is_negative { -1 } else { 1 }
     }
 }

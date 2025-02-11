@@ -1,5 +1,5 @@
 {
-    "sysroot_src": "/home/justin/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library",
+    "sysroot_src": "!/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library",
     "crates": [
         {
             "root_module": "./1.two-sum.rs",
@@ -42,7 +42,12 @@
             "deps": []
         },
         {
-            "root_module": "./198.house-robber.rs",
+            "root_module": "./9.palindrome-number.rs",
+            "edition": "2021",
+            "deps": []
+        },
+        {
+            "root_module": "./45.jump-game-ii.rs",
             "edition": "2021",
             "deps": []
         },
@@ -52,7 +57,7 @@
             "deps": []
         },
         {
-            "root_module": "./45.jump-game-ii.rs",
+            "root_module": "./198.house-robber.rs",
             "edition": "2021",
             "deps": []
         }

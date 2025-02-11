@@ -1,1 +1,0 @@
-leetcode show -l rust -g $@

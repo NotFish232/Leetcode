@@ -6,6 +6,7 @@ impl Solution {
             0
         }
     }
+
     pub fn longest_palindrome(mut s: String) -> String {
         let bytes = s.as_bytes();
         let mut longest = &bytes[0..1];
