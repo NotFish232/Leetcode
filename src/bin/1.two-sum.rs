@@ -10,6 +10,7 @@ impl Solution {
             }
             m.insert(num, idx as i32);
         }
-        return vec![];
+
+        vec![]
     }
 }
