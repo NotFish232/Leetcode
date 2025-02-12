@@ -28,7 +28,7 @@ impl Solution {
             return head.unwrap().next;
         }
 
-        for _ in 0..len - n  - 1{
+        for _ in 0..len - n - 1 {
             if let Some(next_node) = ptr {
                 ptr = &mut next_node.next;
             }
