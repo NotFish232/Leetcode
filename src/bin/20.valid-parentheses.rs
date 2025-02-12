@@ -9,10 +9,10 @@ impl Solution {
                 }
                 ')' | ']' | '}' => {
                     let correct = if let Some(c) = v.pop() {
-                        match c {
-                            '(' => char == ')',
-                            '[' => char == ']',
-                            '{' => char == '}',
+                        char == match c {
+                            '(' => ')',
+                            '[' => ']',
+                            '{' => '}',
                             _ => panic!(),
                         }
                     } else {
