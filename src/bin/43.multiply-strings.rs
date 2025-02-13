@@ -25,7 +25,6 @@ impl Solution {
                 .join("")
                 .trim_start_matches("0")
                 .to_string()
-           
         } else {
             "0".to_string()
         }

@@ -6,7 +6,6 @@ impl Solution {
         while left_ptr <= right_ptr {
             let mid_ptr = (left_ptr + right_ptr) / 2;
 
-
             if nums[mid_ptr] == target {
                 return mid_ptr as i32;
             }

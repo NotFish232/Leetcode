@@ -1,7 +1,7 @@
 impl Solution {
     pub fn next_permutation(nums: &mut Vec<i32>) {
         let n = nums.len();
-        
+
         for i in (0..n - 1).rev() {
             if nums[i] < nums[i + 1] {
                 let s = &nums[i + 1..n];
@@ -10,7 +10,7 @@ impl Solution {
 
                 nums.swap(i, min_idx);
                 nums[i + 1..n].sort();
-                
+
                 return;
             }
         }
