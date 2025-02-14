@@ -11,10 +11,10 @@ impl Solution {
         for i in (0..m).rev() {
             for j in (0..n).rev() {
                 if i + 1 < m {
-                    dp[i][j] =  min(dp[i][j], max(dp[i + 1][j] - dungeon[i][j], 0));
+                    dp[i][j] = min(dp[i][j], max(dp[i + 1][j] - dungeon[i][j], 0));
                 }
                 if j + 1 < n {
-                    dp[i][j] =  min(dp[i][j], max(dp[i][j + 1] - dungeon[i][j], 0));
+                    dp[i][j] = min(dp[i][j], max(dp[i][j + 1] - dungeon[i][j], 0));
                 }
             }
         }
