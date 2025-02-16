@@ -28,7 +28,7 @@ impl Solution {
                     let new_j = (j as i32 + l);
 
                     if 0 <= new_i && new_i < m && 0 <= new_j && new_j < n {
-                        b |= 1 << (new_i * n +  new_j);
+                        b |= 1 << (new_i * n + new_j);
                     }
                 }
 
