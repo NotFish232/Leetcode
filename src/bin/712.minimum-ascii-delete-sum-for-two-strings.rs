@@ -8,7 +8,7 @@ impl Solution {
             dp[i + 1][0] = dp[i][0] + ch as i32;
         }
         for (i, ch) in s2.chars().enumerate() {
-            dp[0][i + 1]= dp[0][i] + ch as i32;
+            dp[0][i + 1] = dp[0][i] + ch as i32;
         }
 
         for (i, ch1) in s1.chars().enumerate() {
