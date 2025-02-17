@@ -24,8 +24,6 @@ impl Solution {
             }
         }
 
-        println!("{special_chars:?}");
-
         special_chars
             .values()
             .filter_map(|&x| if x != -1 { Some(1) } else { None })
