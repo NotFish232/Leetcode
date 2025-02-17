@@ -2,29 +2,35 @@ use std::collections::{HashMap, HashSet};
 
 impl Solution {
     fn _num_tile_possibilities(
-        current: &String,
-        tiles: &mut Vec<String>,
+        current: &mut String,
+        tiles: &mut [i32; 26],
         result: &mut HashSet<String>,
     ) {
         if current.len() != 0 {
-            result.insert(current.to_string());
+            result.insert(current.clone());
         }
 
-        for i in 0..tiles.len() {
-            let tile = tiles.remove(i);
-            let new_current = current.to_string() + tile.as_str();
+        for i in 0..26 {
+            if tiles[i] > 0 {
+                current.push((i as u8 + 'A' as u8) as char);
+                tiles[i] -= 1;
 
-            Solution::_num_tile_possibilities(&new_current, tiles, result);
+                Solution::_num_tile_possibilities(current, tiles, result);
 
-            tiles.insert(i, tile);
+                current.pop();
+                tiles[i] += 1;
+            }
         }
     }
 
     pub fn num_tile_possibilities(tiles: String) -> i32 {
-        let mut tiles_v = tiles.chars().map(|c| c.to_string()).collect();
+        let mut c_tiles = tiles.chars().fold([0; 26], |mut v, ch| {
+            v[(ch as u8 - 'A' as u8) as usize] += 1;
+            v
+        });
         let mut result = HashSet::new();
 
-        Solution::_num_tile_possibilities(&String::new(), &mut tiles_v, &mut result);
+        Solution::_num_tile_possibilities(&mut String::new(), &mut c_tiles, &mut result);
 
         result.len() as i32
     }
