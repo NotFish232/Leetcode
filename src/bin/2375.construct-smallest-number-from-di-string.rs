@@ -34,11 +34,11 @@ impl Solution {
     }
 
     pub fn smallest_number(pattern: String) -> String {
-
         Solution::gen_number_patterns(
             &mut String::new(),
             &mut "123456789".chars().collect(),
             &pattern,
-        ).unwrap()
+        )
+        .unwrap()
     }
 }
