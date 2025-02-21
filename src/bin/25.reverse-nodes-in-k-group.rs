@@ -16,6 +16,7 @@ use std::ptr;
 //     }
 //   }
 // }
+
 impl Solution {
     pub fn reverse_k_group(mut head: Option<Box<ListNode>>, k: i32) -> Option<Box<ListNode>> {
         let mut ptr = &mut head;

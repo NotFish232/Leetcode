@@ -14,6 +14,7 @@
 //     }
 //   }
 // }
+
 impl Solution {
     pub fn reverse_list(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut rest = None;
