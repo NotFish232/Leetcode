@@ -29,7 +29,7 @@ impl FindElements {
     fn new(root: Option<Rc<RefCell<TreeNode>>>) -> Self {
         let mut hs = HashSet::new();
         Self::dfs(root.as_ref(), &mut hs, 0);
-        FindElements { hs }
+        Self { hs }
     }
 
     fn find(&self, target: i32) -> bool {
@@ -40,8 +40,8 @@ impl FindElements {
         if let Some(n) = node {
             hs.insert(val);
 
-            FindElements::dfs(n.borrow().left.as_ref(), hs, val * 2 + 1);
-            FindElements::dfs(n.borrow().right.as_ref(), hs, val * 2 + 2);
+            Self::dfs(n.borrow().left.as_ref(), hs, val * 2 + 1);
+            Self::dfs(n.borrow().right.as_ref(), hs, val * 2 + 2);
         }
     }
 }
