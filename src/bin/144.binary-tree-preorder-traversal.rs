@@ -32,7 +32,7 @@ impl Solution {
 
         while !q.is_empty() {
             let node = Rc::clone(q.front().as_ref().unwrap());
-            
+
             v.push(node.borrow().val);
             q.pop_front();
 
