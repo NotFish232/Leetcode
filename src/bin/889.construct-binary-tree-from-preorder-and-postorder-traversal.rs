@@ -37,9 +37,6 @@ impl Solution {
         mut preorder: Vec<i32>,
         mut postorder: Vec<i32>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
-        println!("preorder: {preorder:?}");
-        println!("postorder: {postorder:?}");
-
         let root = tree_new!(preorder.remove(0));
         let mut stack = vec![tree_copy!(root)];
 
