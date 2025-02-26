@@ -14,6 +14,5 @@ impl Solution {
         }
 
         max_abs
-        
     }
 }
