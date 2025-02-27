@@ -13,7 +13,7 @@ impl Solution {
                 if prev_seq_val < arr[j] && val_idxs.contains_key(&prev_seq_val) {
                     dp[j][i] = dp[j][i].max(dp[*val_idxs.get(&prev_seq_val).unwrap()][j] + 1);
 
-                longest_subseq = longest_subseq.max(dp[j][i]);
+                    longest_subseq = longest_subseq.max(dp[j][i]);
                 }
             }
 
@@ -21,6 +21,5 @@ impl Solution {
         }
 
         longest_subseq.max(0)
-        
     }
 }
