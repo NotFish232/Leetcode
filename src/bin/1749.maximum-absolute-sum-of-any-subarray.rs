@@ -12,7 +12,6 @@ impl Solution {
 
             max_abs = max(max_abs, max(cur_max_pos.abs(), cur_max_neg.abs()));
         }
-
         max_abs
     }
 }
