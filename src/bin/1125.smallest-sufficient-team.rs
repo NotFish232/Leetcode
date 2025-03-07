@@ -28,10 +28,10 @@ impl Solution {
 
         for (i, &p) in hashed_people.iter().enumerate() {
             for j in 0..bitmask_size {
-                if dp[j] == i64::MAX || (dp[j] & 1) >> i == 1 {
+                if dp[j] == i64::MAX || (dp[j] >> i) & 1 == 1 {
                     continue;
                 }
-                
+
                 if dp[j].count_ones() + 1 < dp[j | p].count_ones() {
                     dp[j | p] = dp[j] | (1 << i);
                 }
