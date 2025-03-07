@@ -31,11 +31,9 @@ impl Solution {
                 if dp[j] == i64::MAX || (dp[j] & 1) >> i == 1 {
                     continue;
                 }
-
-                let new_val = j | p;
-
-                if dp[j].count_ones() + 1 < dp[new_val].count_ones() {
-                    dp[new_val] = dp[j] | (1 << i);
+                
+                if dp[j].count_ones() + 1 < dp[j | p].count_ones() {
+                    dp[j | p] = dp[j] | (1 << i);
                 }
             }
         }
