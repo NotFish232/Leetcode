@@ -1,10 +1,9 @@
 impl Solution {
     pub fn minimum_recolors(blocks: String, k: i32) -> i32 {
         blocks
-            .chars()
-            .collect::<Vec<_>>()
+            .as_bytes()
             .windows(k as usize)
-            .map(|c| c.iter().filter(|&&x| x == 'W').count())
+            .map(|c| c.iter().filter(|&&x| x == b'W').count())
             .min()
             .unwrap() as i32
     }
