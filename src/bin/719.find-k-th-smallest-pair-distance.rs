@@ -1,5 +1,5 @@
 impl Solution {
-    fn num_pairs_less(nums: &Vec<i32>, dist: i32) -> i32 {
+    fn num_pairs_within_dist(nums: &Vec<i32>, dist: i32) -> i32 {
         let (mut l, mut r) = (0, 1);
         let mut count = 0;
 
@@ -24,7 +24,7 @@ impl Solution {
         while l < r {
             let m = l + (r - l) / 2;
 
-            if Self::num_pairs_less(&nums, m) >= k {
+            if Self::num_pairs_within_dist(&nums, m) >= k {
                 r = m;
             } else {
                 l = m + 1;
