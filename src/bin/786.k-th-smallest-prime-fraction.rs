@@ -26,7 +26,7 @@ impl Solution {
         let mut seen = HashSet::new();
         seen.insert((0, arr.len() - 1));
 
-        while let Some((d, l, r)) = h.pop() {
+        while let Some((_, l, r)) = h.pop() {
             if !seen.contains(&(l + 1, r)) {
                 h.push((Fraction(arr[l + 1], arr[r]), l + 1, r));
                 seen.insert((l + 1, r));
