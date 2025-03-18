@@ -1,5 +1,5 @@
 use std::{
-    cmp::{self, Reverse},
+    cmp,
     collections::{BinaryHeap, HashSet},
 };
 
