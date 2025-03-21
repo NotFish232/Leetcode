@@ -1,4 +1,3 @@
-#[derive(Debug)]
 struct DisjointSetUnion {
     parents: Vec<usize>,
     ranks: Vec<usize>,
