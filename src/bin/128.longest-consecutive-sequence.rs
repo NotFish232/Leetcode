@@ -46,7 +46,7 @@ impl Solution {
         for (i, &n) in nums.iter().enumerate() {
             if !h.contains_key(&n) {
                 if let Some(&low) = h.get(&(n - 1)) {
-                    dsu.union(low, i);
+                    dsu.union(i, low);
                 }
                 if let Some(&high) = h.get(&(n + 1)) {
                     dsu.union(i, high);
