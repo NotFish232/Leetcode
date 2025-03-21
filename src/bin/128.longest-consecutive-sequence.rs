@@ -1,6 +1,5 @@
 use std::{cmp::Ordering, collections::HashMap};
 
-#[derive(Debug)]
 struct DSU {
     parents: Vec<usize>,
     ranks: Vec<usize>,
