@@ -1,14 +1,16 @@
-use std::collections::HashMap;
+use std::{cmp::Ordering, collections::HashMap};
 
 #[derive(Debug)]
 struct DSU {
     parents: Vec<usize>,
+    ranks: Vec<usize>,
 }
 
 impl DSU {
     fn new(n: usize) -> DSU {
         DSU {
             parents: (0..n).collect(),
+            ranks: vec![0; n],
         }
     }
 
@@ -24,7 +26,16 @@ impl DSU {
         let a_rep = Self::find(self, a);
         let b_rep = Self::find(self, b);
 
-        self.parents[b_rep] = a_rep;
+        if a_rep != b_rep {
+            match self.ranks[a_rep].cmp(&self.ranks[b_rep]) {
+                Ordering::Less => self.parents[a_rep] = b_rep,
+                Ordering::Greater => self.parents[b_rep] = a_rep,
+                Ordering::Equal => {
+                    self.parents[a_rep] = b_rep;
+                    self.ranks[b_rep] += 1;
+                }
+            }
+        }
     }
 }
 
