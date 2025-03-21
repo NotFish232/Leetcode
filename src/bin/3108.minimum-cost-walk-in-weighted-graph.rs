@@ -7,7 +7,7 @@ impl DisjointSetUnion {
     fn new(n: usize) -> DisjointSetUnion {
         DisjointSetUnion {
             parents: (0..n).collect(),
-            ranks: vec![0; n]
+            ranks: vec![0; n],
         }
     }
 
