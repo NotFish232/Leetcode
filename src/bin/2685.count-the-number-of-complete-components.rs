@@ -5,14 +5,14 @@ use std::{
 
 struct DSU {
     parents: Vec<usize>,
-    ranks: Vec<i32>,
+    sizes: Vec<i32>,
 }
 
 impl DSU {
     fn new(n: usize) -> DSU {
         DSU {
             parents: (0..n).collect(),
-            ranks: vec![0; n],
+            sizes: vec![1; n],
         }
     }
 
@@ -29,13 +29,12 @@ impl DSU {
         let b_rep = self.find(b);
 
         if a_rep != b_rep {
-            match self.ranks[a_rep].cmp(&self.ranks[b_rep]) {
-                Ordering::Less => self.parents[a_rep] = b_rep,
-                Ordering::Greater => self.parents[b_rep] = a_rep,
-                Ordering::Equal => {
-                    self.parents[b_rep] = a_rep;
-                    self.ranks[a_rep] += 1;
-                }
+            if self.sizes[a_rep] > self.sizes[b_rep] {
+                self.parents[b_rep] = a_rep;
+                self.sizes[a_rep] += self.sizes[b_rep];
+            } else {
+                self.parents[a_rep] = b_rep;
+                self.sizes[b_rep] += self.sizes[a_rep];
             }
         }
     }
