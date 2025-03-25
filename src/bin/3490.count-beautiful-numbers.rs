@@ -39,9 +39,7 @@ impl Solution {
             )
         }
 
-        dp.insert(k, res);
-
-        res
+        *dp.entry(k).or_insert(res)
     }
 
     pub fn beautiful_numbers(l: i32, r: i32) -> i32 {
