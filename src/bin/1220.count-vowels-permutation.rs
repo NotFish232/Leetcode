@@ -3,12 +3,12 @@ impl Solution {
         let modulo = 1_000_000_007;
 
         let mut dp = vec![vec![0i64; 5]; n as usize];
-        
+
         for i in 0..5 {
             dp[0][i] = 1;
         }
 
-        for i in 1..n  as usize{
+        for i in 1..n as usize {
             dp[i][1] += dp[i - 1][0];
 
             dp[i][0] += dp[i - 1][1];
@@ -27,9 +27,10 @@ impl Solution {
             for j in 0..5 {
                 dp[i][j] %= modulo;
             }
-
         }
 
-        dp[n as usize - 1].iter().fold(0, |acc, x| (acc + x) % modulo) as i32
+        dp[n as usize - 1]
+            .iter()
+            .fold(0, |acc, x| (acc + x) % modulo) as i32
     }
 }
