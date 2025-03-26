@@ -36,7 +36,7 @@ impl Solution {
                 l_tight & (d == l_num[pos]) as i32,
                 r_tight & (d == r_num[pos]) as i32,
                 dp,
-            )
+            );
         }
 
         *dp.entry(k).or_insert(res)
