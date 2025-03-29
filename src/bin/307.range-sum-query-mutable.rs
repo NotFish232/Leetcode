@@ -47,8 +47,7 @@ impl NumArray {
             }
 
             if r_ptr % 2 == 0 {
-                r_ptr -= 1;
-                res += self.tree[r_ptr];
+                res += self.tree[r_ptr - 1];
             }
 
             l_ptr = (l_ptr - 1) / 2;
