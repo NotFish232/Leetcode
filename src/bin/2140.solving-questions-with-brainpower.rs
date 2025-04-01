@@ -7,9 +7,7 @@ impl Solution {
         for (i, q) in questions.iter().enumerate() {
             let j = min(i + q[1] as usize + 1, questions.len());
 
-            if i > 0 {
-                v[i] = max(v[i], v[i - 1]);
-            }
+            v[i + 1] = max(v[i + 1], v[i]);
             v[j] = max(v[j], v[i] + q[0] as i64);
         }
 
