@@ -12,8 +12,7 @@ impl Solution {
             .collect::<Vec<_>>()
             .chunks(k as usize)
             .map(|x| {
-                (b'a' + (x.iter().map(|&c| c as u16 - 'a' as u16).sum::<u16>() % 26) as u8)
-                    as char
+                (b'a' + (x.iter().map(|&c| c as u16 - 'a' as u16).sum::<u16>() % 26) as u8) as char
             })
             .collect()
     }

@@ -13,9 +13,7 @@ impl Solution {
         }
         let mut res = (0..s.len())
             .step_by(((num_rows - 1) * 2) as usize)
-            .fold("".to_string(), |a, idx| {
-                a + s.get(idx..idx + 1).unwrap()
-            });
+            .fold("".to_string(), |a, idx| a + s.get(idx..idx + 1).unwrap());
 
         for i in 0..num_rows - 2 {
             let step_1 = ((num_rows - 2 - i) * 2) as usize;
@@ -31,9 +29,7 @@ impl Solution {
         }
         res += ((num_rows - 1) as usize..s.len())
             .step_by(((num_rows - 1) * 2) as usize)
-            .fold("".to_string(), |a, idx| {
-                a + s.get(idx..idx + 1).unwrap()
-            })
+            .fold("".to_string(), |a, idx| a + s.get(idx..idx + 1).unwrap())
             .as_str();
 
         res
