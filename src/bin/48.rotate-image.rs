@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
-    pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
+    pub fn rotate(matrix: &mut [Vec<i32>]) {
         let n = matrix.len();
 
         for i in 0..n {
@@ -10,12 +18,11 @@ impl Solution {
             }
         }
 
-        for i in 0..n {
+        for row in matrix {
             for j in 0..n / 2 {
-                let temp = matrix[i][j];
-                matrix[i][j] = matrix[i][n - j - 1];
-                matrix[i][n - j - 1] = temp;
+                row.swap(j, n - j - 1);
             }
         }
     }
 }
+// end_submission

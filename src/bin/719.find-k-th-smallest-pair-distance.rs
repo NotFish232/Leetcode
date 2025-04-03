@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
-    fn num_pairs_within_dist(nums: &Vec<i32>, dist: i32) -> i32 {
+    fn num_pairs_within_dist(nums: &[i32], dist: i32) -> i32 {
         let (mut l, mut r) = (0, 1);
         let mut count = 0;
 
@@ -16,7 +24,7 @@ impl Solution {
         count
     }
 
-    pub fn smallest_distance_pair(mut nums: Vec<i32>, mut k: i32) -> i32 {
+    pub fn smallest_distance_pair(mut nums: Vec<i32>, k: i32) -> i32 {
         nums.sort();
 
         let (mut l, mut r) = (0, nums[nums.len() - 1] - nums[0]);
@@ -34,3 +42,4 @@ impl Solution {
         l
     }
 }
+// end_submission

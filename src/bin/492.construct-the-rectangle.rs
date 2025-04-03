@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn construct_rectangle(area: i32) -> Vec<i32> {
         for i in (area as f32).sqrt().ceil() as i32..=area {
@@ -9,3 +17,4 @@ impl Solution {
         unreachable!()
     }
 }
+// end_submission

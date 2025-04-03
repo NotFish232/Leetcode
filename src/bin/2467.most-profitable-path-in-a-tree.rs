@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::{cmp::max, collections::HashSet};
 
+#[allow(dead_code)]
 impl Solution {
     fn find_all_alice_paths(
         current_path: &mut Vec<usize>,
@@ -28,7 +36,7 @@ impl Solution {
         }
     }
 
-    pub fn most_profitable_path(mut edges: Vec<Vec<i32>>, bob: i32, amount: Vec<i32>) -> i32 {
+    pub fn most_profitable_path(edges: Vec<Vec<i32>>, bob: i32, amount: Vec<i32>) -> i32 {
         let mut t_map = vec![Vec::new(); edges.len() + 1];
         for edge in edges {
             t_map[edge[0] as usize].push(edge[1] as usize);
@@ -46,7 +54,7 @@ impl Solution {
         let mut bob_path = Vec::new();
         for alice_path in alice_paths.iter() {
             if let Some(idx) = alice_path.iter().position(|&x| x == bob as usize) {
-                bob_path = alice_path[0..idx + 1].iter().rev().map(|&x| x).collect();
+                bob_path = alice_path[0..idx + 1].iter().rev().cloned().collect();
             }
         }
 
@@ -61,9 +69,9 @@ impl Solution {
 
             while a_ptr < alice_path.len() {
                 if alice_path[a_ptr] == bob_path[b_ptr] {
-                    score += amount[alice_path[a_ptr] as usize] / 2;
+                    score += amount[alice_path[a_ptr]] / 2;
                 } else if !bob_seen.contains(&alice_path[a_ptr]) {
-                    score += amount[alice_path[a_ptr] as usize];
+                    score += amount[alice_path[a_ptr]];
                 }
                 a_ptr += 1;
                 if b_ptr + 1 < bob_path.len() {
@@ -78,3 +86,4 @@ impl Solution {
         max_score
     }
 }
+// end_submission

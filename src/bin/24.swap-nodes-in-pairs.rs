@@ -1,25 +1,14 @@
-// Definition for singly-linked list.
-// #[derive(PartialEq, Eq, Clone, Debug)]
-// pub struct ListNode {
-//   pub val: i32,
-//   pub next: Option<Box<ListNode>>
-// }
-//
-// impl ListNode {
-//   #[inline]
-//   fn new(val: i32) -> Self {
-//     ListNode {
-//       next: None,
-//       val
-//     }
-//   }
-// }
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn swap_pairs(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        if head.is_none() {
-            return None;
-        }
+        head.as_ref()?;
 
         let mut ptr = &mut head;
 
@@ -38,3 +27,4 @@ impl Solution {
         head
     }
 }
+// end_submission

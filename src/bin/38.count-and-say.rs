@@ -1,5 +1,11 @@
-use std::iter;
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn count_and_say(n: i32) -> String {
         if n == 1 {
@@ -23,3 +29,4 @@ impl Solution {
         res
     }
 }
+// end_submission

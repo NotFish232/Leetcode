@@ -1,4 +1,10 @@
-mod stubs;
+#![allow(
+    clippy::needless_range_loop,
+    clippy::if_same_then_else
+)]
+#![cfg_attr(rustfmt, rustfmt_skip)]
+
+pub mod stubs;
 
 // mod_start
 #[path = "bin/1.two-sum.rs"]
@@ -350,5 +356,3 @@ mod s_lexicographically_smallest_generated_string;
 #[path = "bin/3490.count-beautiful-numbers.rs"]
 mod s_count_beautiful_numbers;
 // mod_end
-
-fn main() {}

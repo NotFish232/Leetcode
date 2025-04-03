@@ -1,12 +1,17 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 struct NumArray {
     tree: Vec<i32>,
     n: usize,
 }
 
-/**
- * `&self` means the method takes an immutable reference.
- * If you need a mutable reference, change it to `&mut self` instead.
- */
+#[allow(dead_code)]
 impl NumArray {
     fn new(nums: Vec<i32>) -> Self {
         let n = nums.len();
@@ -23,7 +28,7 @@ impl NumArray {
         Self { tree, n }
     }
 
-    fn update(self: &mut Self, index: i32, val: i32) {
+    fn update(&mut self, index: i32, val: i32) {
         let mut p = self.n + index as usize - 1;
 
         self.tree[p] = val;
@@ -35,7 +40,7 @@ impl NumArray {
         }
     }
 
-    fn sum_range(self: &Self, left: i32, right: i32) -> i32 {
+    fn sum_range(&mut self, left: i32, right: i32) -> i32 {
         let mut res = 0;
 
         let (mut l_ptr, mut r_ptr) = (left as usize + self.n - 1, right as usize + self.n);
@@ -54,6 +59,7 @@ impl NumArray {
             r_ptr = (r_ptr - 1) / 2;
         }
 
-        return res;
+        res
     }
 }
+// end_submission

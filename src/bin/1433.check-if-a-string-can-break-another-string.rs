@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
-    pub fn check_if_can_break(mut s1: String, mut s2: String) -> bool {
+    pub fn check_if_can_break(s1: String, s2: String) -> bool {
         let mut v1: Vec<_> = s1.chars().collect();
         let mut v2: Vec<_> = s2.chars().collect();
         v1.sort();
@@ -9,3 +17,4 @@ impl Solution {
             || v2.iter().zip(v1.iter()).all(|(&a, &b)| a <= b)
     }
 }
+// end_submission

@@ -1,3 +1,10 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 struct DisjointSetUnion {
     parents: Vec<usize>,
     ranks: Vec<usize>,
@@ -11,7 +18,7 @@ impl DisjointSetUnion {
         }
     }
 
-    fn find(self: &mut Self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         if i != self.parents[i] {
             self.parents[i] = Self::find(self, self.parents[i]);
             self.parents[i]
@@ -20,7 +27,7 @@ impl DisjointSetUnion {
         }
     }
 
-    fn union(self: &mut Self, a: usize, b: usize, weight: i32) {
+    fn union(&mut self, a: usize, b: usize) {
         let a_rep = Self::find(self, a);
         let b_rep = Self::find(self, b);
 
@@ -37,12 +44,13 @@ impl DisjointSetUnion {
     }
 }
 
+#[allow(dead_code)]
 impl Solution {
     pub fn minimum_cost(n: i32, edges: Vec<Vec<i32>>, query: Vec<Vec<i32>>) -> Vec<i32> {
         let mut dsu = DisjointSetUnion::new(n as usize);
 
         for edge in edges.iter() {
-            dsu.union(edge[0] as usize, edge[1] as usize, edge[2]);
+            dsu.union(edge[0] as usize, edge[1] as usize);
         }
 
         let mut weights = vec![i32::MAX; n as usize];
@@ -67,3 +75,5 @@ impl Solution {
         v
     }
 }
+
+// end_submission

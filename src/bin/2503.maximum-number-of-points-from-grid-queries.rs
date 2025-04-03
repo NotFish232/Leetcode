@@ -1,17 +1,24 @@
-struct DSU {
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+struct Dsu {
     parents: Vec<usize>,
     size: Vec<usize>,
 }
 
-impl DSU {
-    fn new(n: usize) -> DSU {
+impl Dsu {
+    fn new(n: usize) -> Self {
         Self {
             parents: (0..n).collect(),
             size: vec![1; n],
         }
     }
 
-    fn find(self: &mut Self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         if self.parents[i] != i {
             self.parents[i] = self.find(self.parents[i]);
         }
@@ -19,7 +26,7 @@ impl DSU {
         self.parents[i]
     }
 
-    fn union(self: &mut Self, a: usize, b: usize) {
+    fn union(&mut self, a: usize, b: usize) {
         let a_rep = self.find(a);
         let b_rep = self.find(b);
 
@@ -35,6 +42,7 @@ impl DSU {
     }
 }
 
+#[allow(dead_code)]
 impl Solution {
     pub fn max_points(grid: Vec<Vec<i32>>, queries: Vec<i32>) -> Vec<i32> {
         let (n, m) = (grid.len(), grid[0].len());
@@ -52,7 +60,7 @@ impl Solution {
 
         let mut v = vec![0; queries.len()];
 
-        let mut dsu = DSU::new(n * m);
+        let mut dsu = Dsu::new(n * m);
 
         let mut s_idx = 0;
 
@@ -60,7 +68,7 @@ impl Solution {
             let q = queries[idx];
 
             while s_idx < grid_squares.len() && grid_squares[s_idx].0 < q {
-                let (val, r, c) = grid_squares[s_idx];
+                let (_, r, c) = grid_squares[s_idx];
 
                 for (dr, dc) in [(-1, 0), (1, 0), (0, -1), (0, 1)] {
                     let new_r = r as i32 + dr;
@@ -90,3 +98,4 @@ impl Solution {
         v
     }
 }
+// end_submission

@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use itertools::Itertools;
 
+#[allow(dead_code)]
 impl Solution {
     fn gcd(a: i64, b: i64) -> i64 {
         if b != 0 { Self::gcd(b, a % b) } else { a }
@@ -64,3 +72,4 @@ impl Solution {
         l
     }
 }
+// end_submission

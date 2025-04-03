@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn minimum_recolors(blocks: String, k: i32) -> i32 {
         blocks
@@ -8,3 +16,4 @@ impl Solution {
             .unwrap() as i32
     }
 }
+// end_submission

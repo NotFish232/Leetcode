@@ -1,7 +1,15 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn find_score(nums: Vec<i32>) -> i64 {
         let mut v: Vec<_> = nums.into_iter().enumerate().collect();
-        v.sort_by(|(_, a), (_, b)| a.cmp(&b));
+        v.sort_by(|(_, a), (_, b)| a.cmp(b));
 
         let mut b = vec![false; v.len()];
 
@@ -26,3 +34,4 @@ impl Solution {
         score
     }
 }
+// end_submission

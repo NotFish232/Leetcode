@@ -1,5 +1,4 @@
-pub struct Solution;
-
+use std::{cell::RefCell, rc::Rc};
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
@@ -8,8 +7,24 @@ pub struct ListNode {
 }
 
 impl ListNode {
-    #[inline]
     pub fn new(val: i32) -> Self {
-        ListNode { next: None, val }
+        Self { next: None, val }
+    }
+}
+
+#[derive(Debug, PartialEq, Eq)]
+pub struct TreeNode {
+    pub val: i32,
+    pub left: Option<Rc<RefCell<TreeNode>>>,
+    pub right: Option<Rc<RefCell<TreeNode>>>,
+}
+
+impl TreeNode {
+    pub fn new(val: i32) -> Self {
+        Self {
+            val,
+            left: None,
+            right: None,
+        }
     }
 }

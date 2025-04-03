@@ -1,14 +1,20 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::{cmp::max, collections::HashMap};
 
+#[allow(dead_code)]
 impl Solution {
     pub fn partition_labels(s: String) -> Vec<i32> {
         let mut first_occur = HashMap::new();
         let mut last_occur = HashMap::new();
 
         for (i, ch) in s.chars().enumerate() {
-            if !first_occur.contains_key(&ch) {
-                first_occur.insert(ch, i);
-            }
+            first_occur.entry(ch).or_insert(i);
             last_occur.insert(ch, i);
         }
 
@@ -36,3 +42,4 @@ impl Solution {
             .collect()
     }
 }
+// end_submission

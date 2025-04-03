@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::{HashMap, hash_map::Entry};
 
+#[allow(dead_code)]
 impl Solution {
     fn count_of_substrings_at_least(word: &String, k: i32) -> i64 {
         let word_bytes = word.as_bytes();
@@ -50,3 +58,4 @@ impl Solution {
             - Self::count_of_substrings_at_least(&word, k + 1)
     }
 }
+// end_submission

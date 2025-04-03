@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::{self, Ordering};
 
+#[allow(dead_code)]
 impl Solution {
     pub fn find_peak_element(nums: Vec<i32>) -> i32 {
         let search_fn = |&i: &usize| -> cmp::Ordering {
@@ -21,3 +29,4 @@ impl Solution {
         idxs.binary_search_by(search_fn).unwrap() as i32
     }
 }
+// end_submission

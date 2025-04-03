@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn len_longest_fib_subseq(arr: Vec<i32>) -> i32 {
         let mut dp = vec![vec![2; arr.len()]; arr.len()];
@@ -23,3 +31,4 @@ impl Solution {
         longest_subseq.max(0)
     }
 }
+// end_submission

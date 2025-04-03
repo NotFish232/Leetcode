@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn closest_primes(left: i32, right: i32) -> Vec<i32> {
         let mut v = vec![true; right as usize + 1];
@@ -22,7 +30,7 @@ impl Solution {
 
         for i in left as usize..=right as usize {
             if v[i] {
-                if (cur_dist < 0) {
+                if cur_dist < 0 {
                     cur_dist = 1;
                     continue;
                 }
@@ -41,3 +49,4 @@ impl Solution {
         vec![a, b]
     }
 }
+// end_submission

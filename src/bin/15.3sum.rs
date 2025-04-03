@@ -1,5 +1,11 @@
-use std::collections::{HashMap, HashSet};
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn three_sum(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
         nums.sort();
@@ -17,9 +23,9 @@ impl Solution {
             while left_ptr < right_ptr {
                 let sum = nums[i] + nums[left_ptr] + nums[right_ptr];
 
-                if (sum > 0) {
+                if sum > 0 {
                     right_ptr -= 1;
-                } else if (sum < 0) {
+                } else if sum < 0 {
                     left_ptr += 1;
                 } else {
                     triplets.push(vec![nums[i], nums[left_ptr], nums[right_ptr]]);
@@ -34,3 +40,4 @@ impl Solution {
         triplets
     }
 }
+// end_submission

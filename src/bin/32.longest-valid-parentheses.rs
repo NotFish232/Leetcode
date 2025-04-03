@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::max;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn longest_valid_parentheses(s: String) -> i32 {
         let mut v = vec![0; s.len() + 1];
@@ -9,12 +17,10 @@ impl Solution {
         for (i, c) in s.chars().enumerate() {
             if c == '(' {
                 stack.push((c, i))
-            } else {
-                if let Some(x) = stack.pop() {
-                    if x.0 == '(' {
-                        v[i] = 1;
-                        v[x.1] = 1;
-                    }
+            } else if let Some(x) = stack.pop() {
+                if x.0 == '(' {
+                    v[i] = 1;
+                    v[x.1] = 1;
                 }
             }
         }
@@ -34,3 +40,4 @@ impl Solution {
         max_len
     }
 }
+// end_submission

@@ -1,8 +1,13 @@
-use std::{
-    cmp::Reverse,
-    collections::{BinaryHeap, HashMap, HashSet},
-};
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+use std::{cmp::Reverse, collections::BinaryHeap};
+
+#[allow(dead_code)]
 impl Solution {
     const MOD: i64 = 1_000_000_007;
 
@@ -44,3 +49,4 @@ impl Solution {
         num_paths[n - 1] as i32
     }
 }
+// end_submission

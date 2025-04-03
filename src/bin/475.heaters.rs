@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::{max, min};
 
+#[allow(dead_code)]
 impl Solution {
     pub fn find_radius(houses: Vec<i32>, mut heaters: Vec<i32>) -> i32 {
         // for each house minus the closest heater
@@ -28,3 +36,4 @@ impl Solution {
         result
     }
 }
+// end_submission

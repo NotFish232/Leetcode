@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     fn gen_happy_strings(
         current: &mut String,
@@ -16,7 +24,7 @@ impl Solution {
         }
 
         for ch in ["a", "b", "c"] {
-            if current.len() == 0 || current.get(current.len() - 1..) != Some(ch) {
+            if current.is_empty() || current.get(current.len() - 1..) != Some(ch) {
                 current.push_str(ch);
 
                 Solution::gen_happy_strings(current, result, n - 1, num_req);
@@ -36,3 +44,4 @@ impl Solution {
         }
     }
 }
+// end_submission

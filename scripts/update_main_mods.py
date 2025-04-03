@@ -4,7 +4,7 @@ import re
 
 SOLUTION_DIR = "src/bin/"
 
-MAIN_PATH = "src/main.rs"
+LIB_PATH = "src/lib.rs"
 
 
 MOD_REGEX = re.compile(r"//\s*mod_start.*//\s*mod_end", re.S)
@@ -25,7 +25,7 @@ def main() -> None:
 
     combined_import_statement = "".join(import_statements)
 
-    with open(MAIN_PATH, "r") as f:
+    with open(LIB_PATH, "r") as f:
         content = f.read()
 
     content = re.sub(
@@ -34,7 +34,7 @@ def main() -> None:
         content,
     )
 
-    with open(MAIN_PATH, "w") as f:
+    with open(LIB_PATH, "w") as f:
         f.write(content)
 
 

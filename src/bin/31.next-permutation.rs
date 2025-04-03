@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
-    pub fn next_permutation(nums: &mut Vec<i32>) {
+    pub fn next_permutation(nums: &mut [i32]) {
         let n = nums.len();
 
         for i in (0..n - 1).rev() {
@@ -18,3 +26,4 @@ impl Solution {
         nums.sort();
     }
 }
+// end_submission

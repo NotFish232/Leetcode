@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     fn _create_permutations(
         current: &mut Vec<i32>,
@@ -28,3 +36,4 @@ impl Solution {
         result
     }
 }
+// end_submission

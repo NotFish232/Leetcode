@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn longest_common_prefix(strs: Vec<String>) -> String {
         let mut prefix_chars = Vec::new();
@@ -15,3 +23,4 @@ impl Solution {
         prefix_chars.join("")
     }
 }
+// end_submission

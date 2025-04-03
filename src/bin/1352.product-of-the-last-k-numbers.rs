@@ -1,15 +1,20 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 struct ProductOfNumbers {
     v: Vec<i32>,
     prod: i32,
 }
 
-/**
- * `&self` means the method takes an immutable reference.
- * If you need a mutable reference, change it to `&mut self` instead.
- */
+#[allow(dead_code)]
 impl ProductOfNumbers {
     fn new() -> Self {
-        ProductOfNumbers {
+        Self {
             v: Vec::new(),
             prod: 1,
         }
@@ -35,3 +40,4 @@ impl ProductOfNumbers {
         }
     }
 }
+// end_submission

@@ -1,5 +1,11 @@
-use std::cmp::max;
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn shortest_common_supersequence(str1: String, str2: String) -> String {
         let m = str1.len();
@@ -31,23 +37,20 @@ impl Solution {
             } else if j == 0 {
                 v.push(chars1[i - 1]);
                 i -= 1;
+            } else if chars1[i - 1] == chars2[j - 1] {
+                v.push(chars1[i - 1]);
+                i -= 1;
+                j -= 1;
+            } else if dp[i - 1][j] > dp[i][j - 1] {
+                v.push(chars1[i - 1]);
+                i -= 1;
             } else {
-                if chars1[i - 1] == chars2[j - 1] {
-                    v.push(chars1[i - 1]);
-                    i -= 1;
-                    j -= 1;
-                } else {
-                    if dp[i - 1][j] > dp[i][j - 1] {
-                        v.push(chars1[i - 1]);
-                        i -= 1;
-                    } else {
-                        v.push(chars2[j - 1]);
-                        j -= 1;
-                    }
-                }
+                v.push(chars2[j - 1]);
+                j -= 1;
             }
         }
 
         v.into_iter().rev().collect()
     }
 }
+// end_submission

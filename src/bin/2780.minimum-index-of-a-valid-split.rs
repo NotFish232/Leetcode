@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn minimum_index(nums: Vec<i32>) -> i32 {
         let mut h = HashMap::new();
@@ -8,7 +16,7 @@ impl Solution {
             *h.entry(n).or_insert(0) += 1;
         }
 
-        let Some((&val, &freq)) = h.iter().max_by_key(|(k, v)| **v) else {
+        let Some((&val, &freq)) = h.iter().max_by_key(|(_, v)| **v) else {
             panic!();
         };
 
@@ -27,3 +35,4 @@ impl Solution {
         -1
     }
 }
+// end_submission

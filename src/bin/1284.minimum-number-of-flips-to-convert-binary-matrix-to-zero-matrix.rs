@@ -1,7 +1,15 @@
-use std::collections::{HashMap, VecDeque};
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+use std::collections::{HashMap, VecDeque, hash_map::Entry};
+
+#[allow(dead_code)]
 impl Solution {
-    fn bit_encode(mat: &Vec<Vec<i32>>) -> i32 {
+    fn bit_encode(mat: &[Vec<i32>]) -> i32 {
         let n = mat[0].len();
 
         let mut b = 0;
@@ -24,8 +32,8 @@ impl Solution {
             for j in 0..n {
                 let mut b = 1 << (i * n + j);
                 for (k, l) in directions {
-                    let new_i = (i as i32 + k);
-                    let new_j = (j as i32 + l);
+                    let new_i = i + k;
+                    let new_j = j + l;
 
                     if 0 <= new_i && new_i < m && 0 <= new_j && new_j < n {
                         b |= 1 << (new_i * n + new_j);
@@ -53,8 +61,8 @@ impl Solution {
             for &mask in masks.iter() {
                 let b = x ^ mask;
 
-                if !h.contains_key(&b) {
-                    h.insert(b, x_dist + 1);
+                if let Entry::Vacant(e) = h.entry(b) {
+                    e.insert(x_dist + 1);
                     q.push_back(b);
                 }
             }
@@ -67,3 +75,4 @@ impl Solution {
         -1
     }
 }
+// end_submission

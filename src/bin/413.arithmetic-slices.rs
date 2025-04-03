@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn number_of_arithmetic_slices(nums: Vec<i32>) -> i32 {
         let mut count = 0;
@@ -15,3 +23,4 @@ impl Solution {
         count
     }
 }
+// end_submission

@@ -1,22 +1,26 @@
-use std::{
-    cmp::Ordering,
-    collections::{HashMap, HashSet},
-};
+#[allow(unused)]
+use crate::stubs::*;
 
-struct DSU {
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+use std::collections::{HashMap, HashSet};
+
+struct Dsu {
     parents: Vec<usize>,
     sizes: Vec<i32>,
 }
 
-impl DSU {
-    fn new(n: usize) -> DSU {
-        DSU {
+impl Dsu {
+    fn new(n: usize) -> Self {
+        Self {
             parents: (0..n).collect(),
             sizes: vec![1; n],
         }
     }
 
-    fn find(self: &mut Self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         if self.parents[i] != i {
             self.parents[i] = self.find(self.parents[i]);
         }
@@ -24,7 +28,7 @@ impl DSU {
         self.parents[i]
     }
 
-    fn union(self: &mut Self, a: usize, b: usize) {
+    fn union(&mut self, a: usize, b: usize) {
         let a_rep = self.find(a);
         let b_rep = self.find(b);
 
@@ -40,9 +44,10 @@ impl DSU {
     }
 }
 
+#[allow(dead_code)]
 impl Solution {
     pub fn count_complete_components(n: i32, edges: Vec<Vec<i32>>) -> i32 {
-        let mut dsu = DSU::new(n as usize);
+        let mut dsu = Dsu::new(n as usize);
         let mut seen_edges = HashSet::new();
 
         for edge in edges {
@@ -78,3 +83,4 @@ impl Solution {
         count
     }
 }
+// end_submission

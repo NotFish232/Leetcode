@@ -1,5 +1,11 @@
-use std::cmp::max;
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     fn _is_match(s: &String, p: &String, s_idx: usize, p_idx: usize) -> bool {
         if p_idx == p.len() {
@@ -31,3 +37,4 @@ impl Solution {
         Solution::_is_match(&s, &p, 0, 0)
     }
 }
+// end_submission

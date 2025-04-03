@@ -1,9 +1,13 @@
-use core::num;
-use std::{
-    cmp::{Reverse, min},
-    collections::BinaryHeap,
-};
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+use std::{cmp::min, collections::BinaryHeap};
+
+#[allow(dead_code)]
 impl Solution {
     const MOD: i64 = 1_000_000_007;
 
@@ -126,3 +130,4 @@ impl Solution {
         score as i32
     }
 }
+// end_submission

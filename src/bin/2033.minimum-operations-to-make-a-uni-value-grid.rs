@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn min_operations(grid: Vec<Vec<i32>>, x: i32) -> i32 {
         let mut v = Vec::new();
@@ -26,3 +34,4 @@ impl Solution {
         c
     }
 }
+// end_submission

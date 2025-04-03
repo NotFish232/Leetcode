@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
-    fn make_lps(str: &String) -> Vec<usize> {
+    fn make_lps(str: &str) -> Vec<usize> {
         let str_chars: Vec<_> = str.chars().collect();
 
         let mut lps = vec![0; str_chars.len()];
@@ -13,12 +21,10 @@ impl Solution {
                 len += 1;
                 lps[i] = len;
                 i += 1;
+            } else if len != 0 {
+                len = lps[len - 1];
             } else {
-                if len != 0 {
-                    len = lps[len - 1];
-                } else {
-                    i += 1;
-                }
+                i += 1;
             }
         }
 
@@ -58,12 +64,10 @@ impl Solution {
                     }
                     j = lps[j - 1];
                 }
+            } else if j != 0 {
+                j = lps[j - 1];
             } else {
-                if j != 0 {
-                    j = lps[j - 1];
-                } else {
-                    i += 1;
-                }
+                i += 1;
             }
         }
 
@@ -93,15 +97,14 @@ impl Solution {
                         j = lps[j - 1];
                     }
                 }
+            } else if j != 0 {
+                j = lps[j - 1];
             } else {
-                if j != 0 {
-                    j = lps[j - 1];
-                } else {
-                    i += 1;
-                }
+                i += 1;
             }
         }
 
         v.into_iter().collect()
     }
 }
+// end_submission

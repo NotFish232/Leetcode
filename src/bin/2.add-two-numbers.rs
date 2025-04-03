@@ -1,17 +1,11 @@
-// Definition for singly-linked list.
-// #[derive(PartialEq, Eq, Clone, Debug)]
-// pub struct ListNode {
-//     pub val: i32,
-//     pub next: Option<Box<ListNode>>,
-// }
+#[allow(unused)]
+use crate::stubs::*;
 
-// impl ListNode {
-//     #[inline]
-//     fn new(val: i32) -> Self {
-//         ListNode { next: None, val }
-//     }
-// }
+#[allow(dead_code)]
+struct Solution;
 
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn add_two_numbers(
         mut l1: Option<Box<ListNode>>,
@@ -20,7 +14,7 @@ impl Solution {
         let mut ptr = Some(Box::new(ListNode::new(0)));
         let mut cur = ptr.as_mut();
         let mut carry = 0;
-        while l1 != None || l2 != None || carry != 0 {
+        while l1.is_some() || l2.is_some() || carry != 0 {
             let mut val = carry;
             if let Some(l1_node) = l1 {
                 val += l1_node.val;
@@ -41,3 +35,4 @@ impl Solution {
         ptr.unwrap().next
     }
 }
+// end_submission

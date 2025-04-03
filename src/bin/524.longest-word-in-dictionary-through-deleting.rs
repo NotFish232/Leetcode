@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn find_longest_word(s: String, mut dictionary: Vec<String>) -> String {
         dictionary.sort_by(|a, b| {
@@ -27,3 +35,4 @@ impl Solution {
         String::new()
     }
 }
+// end_submission

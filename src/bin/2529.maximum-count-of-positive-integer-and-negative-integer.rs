@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::max;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn maximum_count(nums: Vec<i32>) -> i32 {
         let mut num_pos = 0;
@@ -16,3 +24,4 @@ impl Solution {
         max(num_pos, num_neg)
     }
 }
+// end_submission

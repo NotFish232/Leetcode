@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::BinaryHeap;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn schedule_course(mut courses: Vec<Vec<i32>>) -> i32 {
         courses.sort_by_key(|x| x[1]);
@@ -18,3 +26,4 @@ impl Solution {
         v.len() as i32
     }
 }
+// end_submission

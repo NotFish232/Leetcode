@@ -1,30 +1,20 @@
-// Definition for a binary tree node.
-// #[derive(Debug, PartialEq, Eq)]
-// pub struct TreeNode {
-//   pub val: i32,
-//   pub left: Option<Rc<RefCell<TreeNode>>>,
-//   pub right: Option<Rc<RefCell<TreeNode>>>,
-// }
-//
-// impl TreeNode {
-//   #[inline]
-//   pub fn new(val: i32) -> Self {
-//     TreeNode {
-//       val,
-//       left: None,
-//       right: None
-//     }
-//   }
-// }
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cell::RefCell;
 use std::collections::HashSet;
 use std::rc::Rc;
 
+#[allow(dead_code)]
 struct FindElements {
     hs: HashSet<i32>,
 }
 
+#[allow(dead_code)]
 impl FindElements {
     fn new(root: Option<Rc<RefCell<TreeNode>>>) -> Self {
         let mut hs = HashSet::new();
@@ -45,3 +35,4 @@ impl FindElements {
         }
     }
 }
+// end_submission

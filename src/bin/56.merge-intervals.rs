@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::max;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn merge(mut intervals: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         intervals.sort_by_key(|x| x[0]);
@@ -18,3 +26,4 @@ impl Solution {
         new_intervals
     }
 }
+// end_submission

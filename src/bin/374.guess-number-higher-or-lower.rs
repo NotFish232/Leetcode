@@ -1,12 +1,15 @@
-/**
- * Forward declaration of guess API.
- * @param  num   your guess
- * @return 	     -1 if num is higher than the picked number
- *			      1 if num is lower than the picked number
- *               otherwise return 0
- * unsafe fn guess(num: i32) -> i32 {}
- */
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+fn guess(_: i32) -> i32 {
+    0
+}
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     #[allow(non_snake_case)]
     unsafe fn guessNumber(n: i32) -> i32 {
@@ -24,3 +27,4 @@ impl Solution {
         }
     }
 }
+// end_submission

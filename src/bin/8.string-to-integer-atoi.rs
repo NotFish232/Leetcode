@@ -1,11 +1,17 @@
-use std::cmp::{max, min};
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn my_atoi(s: String) -> i32 {
         let mut num: i64 = 0;
         let mut is_negative = false;
         let mut seen_non_digit = false;
-        for (i, ch) in s.chars().enumerate() {
+        for ch in s.chars() {
             if !ch.is_numeric() {
                 if !seen_non_digit && (ch == ' ' || ch == '+' || ch == '-') {
                     if ch == '+' || ch == '-' {
@@ -31,3 +37,4 @@ impl Solution {
         num as i32 * if is_negative { -1 } else { 1 }
     }
 }
+// end_submission

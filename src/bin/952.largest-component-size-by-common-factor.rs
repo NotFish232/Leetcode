@@ -1,19 +1,29 @@
-use std::{cmp::Ordering, collections::HashMap};
+#[allow(unused)]
+use crate::stubs::*;
 
-struct DSU {
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+use std::{
+    cmp::Ordering,
+    collections::{HashMap, hash_map::Entry},
+};
+
+struct Dsu {
     parents: Vec<usize>,
     ranks: Vec<i32>,
 }
 
-impl DSU {
-    fn new(n: usize) -> DSU {
-        DSU {
+impl Dsu {
+    fn new(n: usize) -> Self {
+        Self {
             parents: (0..n).collect(),
             ranks: vec![0; n],
         }
     }
 
-    fn find(self: &mut Self, i: usize) -> usize {
+    fn find(&mut self, i: usize) -> usize {
         if self.parents[i] != i {
             self.parents[i] = self.find(self.parents[i]);
         }
@@ -21,7 +31,7 @@ impl DSU {
         self.parents[i]
     }
 
-    fn union(self: &mut Self, a: usize, b: usize) {
+    fn union(&mut self, a: usize, b: usize) {
         let a_rep = self.find(a);
         let b_rep = self.find(b);
 
@@ -38,6 +48,7 @@ impl DSU {
     }
 }
 
+#[allow(dead_code)]
 impl Solution {
     fn find_prime_factors(mut x: i32) -> Vec<i32> {
         let mut prime_factors = Vec::new();
@@ -68,7 +79,7 @@ impl Solution {
     }
 
     pub fn largest_component_size(nums: Vec<i32>) -> i32 {
-        let mut dsu = DSU::new(nums.len());
+        let mut dsu = Dsu::new(nums.len());
 
         let mut factor_to_i = HashMap::new();
 
@@ -76,10 +87,10 @@ impl Solution {
             let prime_factors = Self::find_prime_factors(nums[i]);
 
             for f in prime_factors {
-                if factor_to_i.contains_key(&f) {
-                    dsu.union(i, factor_to_i[&f]);
+                if let Entry::Vacant(e) = factor_to_i.entry(f) {
+                    e.insert(i);
                 } else {
-                    factor_to_i.insert(f, i);
+                    dsu.union(i, factor_to_i[&f]);
                 }
             }
         }
@@ -93,3 +104,4 @@ impl Solution {
         *dsu_counts.values().max().unwrap_or(&0)
     }
 }
+// end_submission

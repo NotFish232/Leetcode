@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn count_vowel_permutation(n: i32) -> i32 {
         let modulo = 1_000_000_007;
@@ -34,3 +42,4 @@ impl Solution {
             .fold(0, |acc, x| (acc + x) % modulo) as i32
     }
 }
+// end_submission

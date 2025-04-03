@@ -1,17 +1,11 @@
-// Definition for singly-linked list.
-// #[derive(PartialEq, Eq, Clone, Debug)]
-// pub struct ListNode {
-//     pub val: i32,
-//     pub next: Option<Box<ListNode>>,
-// }
+#[allow(unused)]
+use crate::stubs::*;
 
-// impl ListNode {
-//     #[inline]
-//     fn new(val: i32) -> Self {
-//         ListNode { next: None, val }
-//     }
-// }
+#[allow(dead_code)]
+struct Solution;
 
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn remove_nth_from_end(mut head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
         let mut p = &head;
@@ -34,8 +28,8 @@ impl Solution {
             }
         }
 
-        if let Some(ref mut node) = ptr {
-            if let Some(next_node) = &node.next {
+        if let Some(node) = ptr {
+            if let Some(next_node) = node.next.take() {
                 node.next = next_node.next.clone();
             }
         }
@@ -43,3 +37,4 @@ impl Solution {
         head
     }
 }
+// end_submission

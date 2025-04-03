@@ -1,8 +1,16 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn letter_combinations(digits: String) -> Vec<String> {
-        if digits.len() == 0 {
+        if digits.is_empty() {
             return Vec::new();
         }
 
@@ -39,3 +47,4 @@ impl Solution {
         combinations
     }
 }
+// end_submission

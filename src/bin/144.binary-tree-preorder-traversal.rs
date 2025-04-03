@@ -1,29 +1,18 @@
-// Definition for a binary tree node.
-// #[derive(Debug, PartialEq, Eq)]
-// pub struct TreeNode {
-//   pub val: i32,
-//   pub left: Option<Rc<RefCell<TreeNode>>>,
-//   pub right: Option<Rc<RefCell<TreeNode>>>,
-// }
-//
-// impl TreeNode {
-//   #[inline]
-//   pub fn new(val: i32) -> Self {
-//     TreeNode {
-//       val,
-//       left: None,
-//       right: None
-//     }
-//   }
-// }
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cell::RefCell;
 use std::collections::VecDeque;
 use std::rc::Rc;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn preorder_traversal(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
-        if root == None {
+        if root.is_none() {
             return Vec::new();
         }
 
@@ -36,10 +25,10 @@ impl Solution {
             v.push(node.borrow().val);
             q.pop_front();
 
-            if node.borrow().right != None {
+            if node.borrow().right.is_some() {
                 q.push_front(node.borrow_mut().right.take().unwrap());
             }
-            if node.borrow().left != None {
+            if node.borrow().left.is_some() {
                 q.push_front(node.borrow_mut().left.take().unwrap());
             }
         }
@@ -47,3 +36,4 @@ impl Solution {
         v
     }
 }
+// end_submission

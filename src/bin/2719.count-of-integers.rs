@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     const MOD: i32 = 1_000_000_007;
 
@@ -53,7 +61,7 @@ impl Solution {
         Self::digit_dp(&num, 0, 0, 1, min_sum, max_sum, &mut dp)
     }
 
-    pub fn count(mut num1: String, num2: String, min_sum: i32, max_sum: i32) -> i32 {
+    pub fn count(num1: String, num2: String, min_sum: i32, max_sum: i32) -> i32 {
         let lb_sum = num1.chars().map(|c| c.to_digit(10).unwrap()).sum::<u32>() as i32;
 
         (Self::MOD + Self::solve(num2, min_sum, max_sum) - Self::solve(num1, min_sum, max_sum)
@@ -65,3 +73,4 @@ impl Solution {
             % Self::MOD
     }
 }
+// end_submission

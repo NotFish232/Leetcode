@@ -1,26 +1,15 @@
-// Definition for a binary tree node.
-// #[derive(Debug, PartialEq, Eq)]
-// pub struct TreeNode {
-//   pub val: i32,
-//   pub left: Option<Rc<RefCell<TreeNode>>>,
-//   pub right: Option<Rc<RefCell<TreeNode>>>,
-// }
-//
-// impl TreeNode {
-//   #[inline]
-//   pub fn new(val: i32) -> Self {
-//     TreeNode {
-//       val,
-//       left: None,
-//       right: None
-//     }
-//   }
-// }
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cell::RefCell;
 use std::collections::VecDeque;
 use std::rc::Rc;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn recover_from_preorder(traversal: String) -> Option<Rc<RefCell<TreeNode>>> {
         let mut traversal_chunks = VecDeque::new();
@@ -39,7 +28,7 @@ impl Solution {
             }
         }
 
-        let mut root = Some(Rc::new(RefCell::new(TreeNode::new(
+        let root = Some(Rc::new(RefCell::new(TreeNode::new(
             traversal_chunks.pop_front().unwrap().0,
         ))));
         let mut stack = vec![(Some(Rc::clone(root.as_ref().unwrap())), 0)];
@@ -59,7 +48,7 @@ impl Solution {
 
             if let Some(prev) = stack.last() {
                 if let Some(p) = &prev.0 {
-                    if p.borrow().left == None {
+                    if p.borrow().left.is_none() {
                         p.borrow_mut().left = Some(Rc::clone(&node));
                     } else {
                         p.borrow_mut().right = Some(Rc::clone(&node));
@@ -73,3 +62,4 @@ impl Solution {
         root
     }
 }
+// end_submission

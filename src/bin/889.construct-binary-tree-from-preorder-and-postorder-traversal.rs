@@ -1,22 +1,10 @@
-// Definition for a binary tree node.
-// #[derive(Debug, PartialEq, Eq)]
-// pub struct TreeNode {
-//   pub val: i32,
-//   pub left: Option<Rc<RefCell<TreeNode>>>,
-//   pub right: Option<Rc<RefCell<TreeNode>>>,
-// }
-//
-// impl TreeNode {
-//   #[inline]
-//   pub fn new(val: i32) -> Self {
-//     TreeNode {
-//       val,
-//       left: None,
-//       right: None
-//     }
-//   }
-// }
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 macro_rules! tree_new {
     ($val: expr) => {
         Some(Rc::new(RefCell::new(TreeNode::new($val))))
@@ -32,10 +20,11 @@ macro_rules! tree_copy {
 use std::cell::RefCell;
 use std::rc::Rc;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn construct_from_pre_post(
         mut preorder: Vec<i32>,
-        mut postorder: Vec<i32>,
+        postorder: Vec<i32>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
         let root = tree_new!(preorder.remove(0));
         let mut stack = vec![tree_copy!(root)];
@@ -58,7 +47,7 @@ impl Solution {
             }
 
             if let Some(Some(prev)) = stack.last() {
-                if prev.borrow().left == None {
+                if prev.borrow().left.is_none() {
                     prev.borrow_mut().left = tree_copy!(node);
                 } else {
                     prev.borrow_mut().right = tree_copy!(node);
@@ -71,3 +60,4 @@ impl Solution {
         root
     }
 }
+// end_submission

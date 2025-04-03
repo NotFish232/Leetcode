@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn four_sum(mut nums: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
         nums.sort();
@@ -24,9 +32,9 @@ impl Solution {
                         + nums[right_ptr] as i64;
                     let target_64 = target as i64;
 
-                    if (sum > target_64) {
+                    if sum > target_64 {
                         right_ptr -= 1;
-                    } else if (sum < target_64) {
+                    } else if sum < target_64 {
                         left_ptr += 1;
                     } else {
                         quadruplets.push(vec![nums[i], nums[j], nums[left_ptr], nums[right_ptr]]);
@@ -44,3 +52,4 @@ impl Solution {
         quadruplets
     }
 }
+// end_submission

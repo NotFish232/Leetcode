@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn int_to_roman(mut num: i32) -> String {
         let symbols_and_values = [
@@ -11,7 +19,7 @@ impl Solution {
         ];
         let mut res = Vec::new();
 
-        while (num > 0) {
+        while num > 0 {
             match num.to_string().get(0..1) {
                 Some("4") | Some("9") => {
                     for (i, (symbol, value)) in symbols_and_values.iter().enumerate().rev() {
@@ -44,3 +52,4 @@ impl Solution {
         res.join("")
     }
 }
+// end_submission

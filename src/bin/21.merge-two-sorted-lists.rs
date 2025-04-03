@@ -1,20 +1,11 @@
-// Definition for singly-linked list.
-// #[derive(PartialEq, Eq, Clone, Debug)]
-// pub struct ListNode {
-//   pub val: i32,
-//   pub next: Option<Box<ListNode>>
-// }
-//
-// impl ListNode {
-//   #[inline]
-//   fn new(val: i32) -> Self {
-//     ListNode {
-//       next: None,
-//       val
-//     }
-//   }
-// }
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn merge_two_lists(
         mut list1: Option<Box<ListNode>>,
@@ -24,11 +15,11 @@ impl Solution {
         let mut ptr: Option<&mut Box<ListNode>> = None;
 
         while list1.is_some() || list2.is_some() {
-            let mut val = 0;
+            let val;
 
             match (list1, list2) {
                 (Some(n1), Some(n2)) => {
-                    if (n1.val < n2.val) {
+                    if n1.val < n2.val {
                         val = n1.val;
                         list1 = n1.next;
                         list2 = Some(n2);
@@ -63,3 +54,4 @@ impl Solution {
         head
     }
 }
+// end_submission

@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     fn gen_number_patterns(
         current: &mut String,
@@ -42,3 +50,4 @@ impl Solution {
         .unwrap()
     }
 }
+// end_submission

@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn first_missing_positive(mut nums: Vec<i32>) -> i32 {
         let mut i = 0;
@@ -29,3 +37,4 @@ impl Solution {
         i as i32
     }
 }
+// end_submission

@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::max;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn maximum_gap(mut nums: Vec<i32>) -> i32 {
         nums.sort();
@@ -13,3 +21,4 @@ impl Solution {
         max_gap
     }
 }
+// end_submission

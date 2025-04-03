@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn search(nums: Vec<i32>, target: i32) -> i32 {
         let mut left_ptr = 0;
@@ -16,15 +24,14 @@ impl Solution {
                 } else {
                     left_ptr = mid_ptr + 1;
                 }
+            } else if nums[mid_ptr] < target && target <= nums[right_ptr] {
+                left_ptr = mid_ptr + 1;
             } else {
-                if nums[mid_ptr] < target && target <= nums[right_ptr] {
-                    left_ptr = mid_ptr + 1;
-                } else {
-                    right_ptr = mid_ptr - 1;
-                }
+                right_ptr = mid_ptr - 1;
             }
         }
 
         -1
     }
 }
+// end_submission

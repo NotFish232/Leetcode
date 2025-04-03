@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashSet;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn find_all_recipes(
         mut recipes: Vec<String>,
@@ -12,7 +20,7 @@ impl Solution {
         loop {
             let mut found_idx = -1;
 
-            for (idx, (r, i)) in recipes.iter().zip(ingredients.iter()).enumerate() {
+            for (idx, i) in ingredients.iter().enumerate() {
                 if i.iter().all(|x| current.contains(x)) {
                     found_idx = idx as i32;
                     break;
@@ -35,3 +43,4 @@ impl Solution {
         made
     }
 }
+// end_submission

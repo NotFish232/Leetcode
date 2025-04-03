@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::max;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn maximum_triplet_value(nums: Vec<i32>) -> i64 {
         let mut max_val = 0;
@@ -17,3 +25,4 @@ impl Solution {
         max_val
     }
 }
+// end_submission

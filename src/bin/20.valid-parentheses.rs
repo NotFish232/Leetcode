@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn is_valid(s: String) -> bool {
         let mut v = Vec::new();
@@ -26,6 +34,7 @@ impl Solution {
             }
         }
 
-        return v.len() == 0;
+        v.is_empty()
     }
 }
+// end_submission

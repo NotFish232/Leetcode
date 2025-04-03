@@ -1,17 +1,22 @@
-use std::collections::{HashMap, HashSet};
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+use std::collections::HashMap;
+
+#[allow(dead_code)]
 struct Encrypter {
     key_to_val: HashMap<char, String>,
     encrypted_to_count: HashMap<String, i32>,
 }
 
-/**
- * `&self` means the method takes an immutable reference.
- * If you need a mutable reference, change it to `&mut self` instead.
- */
+#[allow(dead_code)]
 impl Encrypter {
     fn new(keys: Vec<char>, values: Vec<String>, dictionary: Vec<String>) -> Self {
-        let key_to_val = keys.into_iter().zip(values.into_iter()).collect();
+        let key_to_val = keys.into_iter().zip(values).collect();
 
         let mut encrypted_to_count = HashMap::new();
 
@@ -44,3 +49,4 @@ impl Encrypter {
         *self.encrypted_to_count.get(&word2).unwrap_or(&0)
     }
 }
+// end_submission

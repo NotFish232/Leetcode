@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn get_common(nums1: Vec<i32>, nums2: Vec<i32>) -> i32 {
         let mut ptr_1 = 0;
@@ -16,3 +24,4 @@ impl Solution {
         -1
     }
 }
+// end_submission

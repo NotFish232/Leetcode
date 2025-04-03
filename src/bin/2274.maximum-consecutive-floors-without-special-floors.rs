@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::max;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn max_consecutive(bottom: i32, top: i32, mut special: Vec<i32>) -> i32 {
         special.sort();
@@ -15,3 +23,4 @@ impl Solution {
         max_count
     }
 }
+// end_submission

@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut m: HashMap<i32, i32> = HashMap::new();
@@ -14,3 +22,4 @@ impl Solution {
         vec![]
     }
 }
+// end_submission

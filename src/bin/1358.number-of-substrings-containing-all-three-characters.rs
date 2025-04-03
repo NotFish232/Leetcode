@@ -1,5 +1,11 @@
-use std::collections::HashMap;
+#[allow(unused)]
+use crate::stubs::*;
 
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn number_of_substrings(s: String) -> i32 {
         let mut seen = [0; 3];
@@ -26,3 +32,4 @@ impl Solution {
         count
     }
 }
+// end_submission

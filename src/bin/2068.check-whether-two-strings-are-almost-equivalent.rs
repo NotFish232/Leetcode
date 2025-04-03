@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn check_almost_equivalent(word1: String, word2: String) -> bool {
         word1
@@ -12,3 +20,4 @@ impl Solution {
             .all(|x| x.abs() <= 3)
     }
 }
+// end_submission

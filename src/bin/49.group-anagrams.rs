@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
         let mut hm = HashMap::new();
@@ -11,6 +19,7 @@ impl Solution {
             hm.entry(s_chars).or_insert(vec![]).push(str);
         }
 
-        hm.values().map(|x| x.clone()).collect()
+        hm.values().cloned().collect()
     }
 }
+// end_submission

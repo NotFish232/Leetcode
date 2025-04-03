@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn three_sum_closest(mut nums: Vec<i32>, target: i32) -> i32 {
         nums.sort();
@@ -22,9 +30,9 @@ impl Solution {
                     closest_sum = sum;
                 }
 
-                if (sum > target) {
+                if sum > target {
                     right_ptr -= 1;
-                } else if (sum < target) {
+                } else if sum < target {
                     left_ptr += 1;
                 } else {
                     return target;
@@ -35,3 +43,4 @@ impl Solution {
         closest_sum
     }
 }
+// end_submission

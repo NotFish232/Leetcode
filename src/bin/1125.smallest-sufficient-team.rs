@@ -1,7 +1,15 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 impl Solution {
-    fn gen_people_bitmasks(people: &Vec<Vec<String>>, req_skills: &Vec<String>) -> Vec<usize> {
+    fn gen_people_bitmasks(people: &Vec<Vec<String>>, req_skills: &[String]) -> Vec<usize> {
         let req_skills_map: HashMap<_, _> =
             req_skills.iter().enumerate().map(|(i, x)| (x, i)).collect();
         let mut people_bitmasks = Vec::new();
@@ -9,7 +17,7 @@ impl Solution {
         for person in people {
             let mut x = 0;
             for skill in person {
-                x |= (1 << req_skills_map[skill]);
+                x |= 1 << req_skills_map[skill];
             }
             people_bitmasks.push(x);
         }
@@ -38,7 +46,7 @@ impl Solution {
             }
         }
 
-        let mut people_bits = dp[bitmask_size - 1];
+        let people_bits = dp[bitmask_size - 1];
         let mut result = Vec::new();
 
         for i in 0..hashed_people.len() {
@@ -50,3 +58,4 @@ impl Solution {
         result
     }
 }
+// end_submission

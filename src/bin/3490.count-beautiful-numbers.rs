@@ -1,6 +1,15 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 impl Solution {
+    #[allow(clippy::too_many_arguments)]
     fn digit_dp(
         pos: usize,
         cur_prod: i32,
@@ -62,3 +71,4 @@ impl Solution {
         Self::digit_dp(0, 1, 0, &v_l, &v_r, 1, 1, &mut dp)
     }
 }
+// end_submission

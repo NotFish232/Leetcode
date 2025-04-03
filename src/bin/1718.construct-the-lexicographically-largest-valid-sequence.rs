@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     fn _construct_distanced_sequence(
         v: &mut Vec<i32>,
@@ -5,7 +13,7 @@ impl Solution {
         idx: usize,
         mut seen_1: bool,
     ) -> bool {
-        if nums.len() == 0 {
+        if nums.is_empty() {
             return true;
         }
 
@@ -50,3 +58,4 @@ impl Solution {
         v
     }
 }
+// end_submission

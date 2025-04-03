@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn plus_one(mut digits: Vec<i32>) -> Vec<i32> {
         let n = digits.len();
@@ -17,3 +25,4 @@ impl Solution {
         digits
     }
 }
+// end_submission

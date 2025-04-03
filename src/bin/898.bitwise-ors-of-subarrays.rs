@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashSet;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn subarray_bitwise_o_rs(arr: Vec<i32>) -> i32 {
         let mut a = HashSet::new();
@@ -13,7 +21,7 @@ impl Solution {
             }
             new_cur.insert(n);
 
-            a.extend(new_cur.iter().map(|&x| x));
+            a.extend(new_cur.iter().cloned());
 
             cur = new_cur;
         }
@@ -21,3 +29,4 @@ impl Solution {
         a.len() as i32
     }
 }
+// end_submission

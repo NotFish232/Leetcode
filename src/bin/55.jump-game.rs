@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::min;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn can_jump(nums: Vec<i32>) -> bool {
         let mut v = vec![false; nums.len()];
@@ -7,7 +15,7 @@ impl Solution {
 
         for (i, &n) in nums.iter().enumerate() {
             if v[i] {
-                for j in (i + 1..min(i + n as usize + 1, nums.len())) {
+                for j in i + 1..min(i + n as usize + 1, nums.len()) {
                     v[j] = true;
                 }
             }
@@ -16,3 +24,4 @@ impl Solution {
         v[v.len() - 1]
     }
 }
+// end_submission

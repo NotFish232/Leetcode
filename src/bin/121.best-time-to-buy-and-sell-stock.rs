@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::max;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn max_profit(prices: Vec<i32>) -> i32 {
         let mut dp = vec![vec![0; 2]; prices.len()];
@@ -13,3 +21,4 @@ impl Solution {
         dp[prices.len() - 1][1]
     }
 }
+// end_submission

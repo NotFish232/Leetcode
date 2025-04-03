@@ -1,3 +1,11 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn number_of_alternating_groups(colors: Vec<i32>, k: i32) -> i32 {
         let mut cur_len = 1;
@@ -15,6 +23,7 @@ impl Solution {
             }
         }
 
-        count as i32
+        count
     }
 }
+// end_submission

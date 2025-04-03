@@ -1,8 +1,16 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 impl Solution {
-    pub fn find_substring(s: String, mut words: Vec<String>) -> Vec<i32> {
-        let mut words_s = words.join("");
+    pub fn find_substring(s: String, words: Vec<String>) -> Vec<i32> {
+        let words_s = words.join("");
         let mut words_m: HashMap<String, i32> = HashMap::new();
         for word in &words {
             *words_m.entry(word.to_string()).or_default() += 1
@@ -28,3 +36,4 @@ impl Solution {
             .collect()
     }
 }
+// end_submission

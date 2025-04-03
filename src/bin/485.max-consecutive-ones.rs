@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::cmp::max;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn find_max_consecutive_ones(nums: Vec<i32>) -> i32 {
         let mut max_count = 0;
@@ -14,6 +22,7 @@ impl Solution {
             }
         }
 
-        max_count as i32
+        max_count
     }
 }
+// end_submission

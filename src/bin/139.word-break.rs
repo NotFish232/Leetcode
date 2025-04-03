@@ -1,5 +1,13 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+#[allow(dead_code)]
+struct Solution;
+
+// start_submission
 use std::collections::HashSet;
 
+#[allow(dead_code)]
 impl Solution {
     fn _word_break(s: String, word_dict: &Vec<String>, memo: &mut HashSet<String>) -> bool {
         if memo.contains(&s) {
@@ -25,9 +33,10 @@ impl Solution {
         false
     }
 
-    pub fn word_break(s: String, mut word_dict: Vec<String>) -> bool {
+    pub fn word_break(s: String, word_dict: Vec<String>) -> bool {
         let mut memo = HashSet::new();
 
         Solution::_word_break(s, &word_dict, &mut memo)
     }
 }
+// end_submission
