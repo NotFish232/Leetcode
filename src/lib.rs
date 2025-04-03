@@ -1,6 +1,7 @@
 #![allow(
     clippy::needless_range_loop,
-    clippy::if_same_then_else
+    clippy::if_same_then_else,
+    clippy::collapsible_else_if
 )]
 #![cfg_attr(rustfmt, rustfmt_skip)]
 
