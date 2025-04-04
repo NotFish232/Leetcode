@@ -21,6 +21,7 @@ impl Solution {
             Self::count_depth(&node.as_ref().unwrap().borrow().right),
         ) + 1
     }
+    
     pub fn lca_deepest_leaves(
         mut root: Option<Rc<RefCell<TreeNode>>>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
