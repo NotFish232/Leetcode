@@ -5,6 +5,7 @@ use crate::stubs::*;
 struct Solution;
 
 // start_submission
+#[allow(dead_code)]
 impl Solution {
     pub fn minimum_numbers(mut num: i32, k: i32) -> i32 {
         if k == 0 {
