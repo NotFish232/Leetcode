@@ -194,6 +194,8 @@ mod s_partition_labels;
 mod s_k_th_smallest_prime_fraction;
 #[path = "bin/836.rectangle-overlap.rs"]
 mod s_rectangle_overlap;
+#[path = "bin/865.smallest-subtree-with-all-the-deepest-nodes.rs"]
+mod s_smallest_subtree_with_all_the_deepest_nodes;
 #[path = "bin/873.length-of-longest-fibonacci-subsequence.rs"]
 mod s_length_of_longest_fibonacci_subsequence;
 #[path = "bin/889.construct-binary-tree-from-preorder-and-postorder-traversal.rs"]

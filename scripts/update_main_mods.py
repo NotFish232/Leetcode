@@ -1,3 +1,5 @@
+#!/bin/python3
+
 from pathlib import Path
 from natsort import natsorted
 import re

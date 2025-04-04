@@ -22,7 +22,7 @@ impl Solution {
         ) + 1
     }
 
-    pub fn lca_deepest_leaves(
+    pub fn subtree_with_all_deepest(
         mut root: Option<Rc<RefCell<TreeNode>>>,
     ) -> Option<Rc<RefCell<TreeNode>>> {
         loop {
