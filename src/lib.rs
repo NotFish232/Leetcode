@@ -248,6 +248,8 @@ mod s_construct_the_lexicographically_largest_valid_sequence;
 mod s_maximum_absolute_sum_of_any_subarray;
 #[path = "bin/1780.check-if-number-is-a-sum-of-powers-of-three.rs"]
 mod s_check_if_number_is_a_sum_of_powers_of_three;
+#[path = "bin/1863.sum-of-all-subset-xor-totals.rs"]
+mod s_sum_of_all_subset_xor_totals;
 #[path = "bin/1910.remove-all-occurrences-of-a-substring.rs"]
 mod s_remove_all_occurrences_of_a_substring;
 #[path = "bin/1976.number-of-ways-to-arrive-at-destination.rs"]
