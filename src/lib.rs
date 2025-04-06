@@ -152,6 +152,8 @@ mod s_longest_increasing_subsequence;
 mod s_range_sum_query_mutable;
 #[path = "bin/309.best-time-to-buy-and-sell-stock-with-cooldown.rs"]
 mod s_best_time_to_buy_and_sell_stock_with_cooldown;
+#[path = "bin/368.largest-divisible-subset.rs"]
+mod s_largest_divisible_subset;
 #[path = "bin/374.guess-number-higher-or-lower.rs"]
 mod s_guess_number_higher_or_lower;
 #[path = "bin/403.frog-jump.rs"]
