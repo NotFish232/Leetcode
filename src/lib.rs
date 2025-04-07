@@ -160,6 +160,8 @@ mod s_guess_number_higher_or_lower;
 mod s_frog_jump;
 #[path = "bin/413.arithmetic-slices.rs"]
 mod s_arithmetic_slices;
+#[path = "bin/416.partition-equal-subset-sum.rs"]
+mod s_partition_equal_subset_sum;
 #[path = "bin/446.arithmetic-slices-ii-subsequence.rs"]
 mod s_arithmetic_slices_ii_subsequence;
 #[path = "bin/453.minimum-moves-to-equal-array-elements.rs"]
