@@ -364,6 +364,8 @@ mod s_count_of_substrings_containing_every_vowel_and_k_consonants_ii;
 mod s_zero_array_transformation_ii;
 #[path = "bin/3394.check-if-grid-can-be-cut-into-sections.rs"]
 mod s_check_if_grid_can_be_cut_into_sections;
+#[path = "bin/3396.minimum-number-of-operations-to-make-elements-in-array-distinct.rs"]
+mod s_minimum_number_of_operations_to_make_elements_in_array_distinct;
 #[path = "bin/3474.lexicographically-smallest-generated-string.rs"]
 mod s_lexicographically_smallest_generated_string;
 #[path = "bin/3490.count-beautiful-numbers.rs"]
