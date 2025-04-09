@@ -362,6 +362,8 @@ mod s_convert_date_to_binary;
 mod s_count_of_substrings_containing_every_vowel_and_k_consonants_ii;
 #[path = "bin/3356.zero-array-transformation-ii.rs"]
 mod s_zero_array_transformation_ii;
+#[path = "bin/3375.minimum-operations-to-make-array-values-equal-to-k.rs"]
+mod s_minimum_operations_to_make_array_values_equal_to_k;
 #[path = "bin/3394.check-if-grid-can-be-cut-into-sections.rs"]
 mod s_check_if_grid_can_be_cut_into_sections;
 #[path = "bin/3396.minimum-number-of-operations-to-make-elements-in-array-distinct.rs"]
