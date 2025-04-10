@@ -1,7 +1,8 @@
 #![allow(
     clippy::needless_range_loop,
     clippy::if_same_then_else,
-    clippy::collapsible_else_if
+    clippy::collapsible_else_if,
+    clippy::too_many_arguments
 )]
 #![cfg_attr(rustfmt, rustfmt_skip)]
 
@@ -338,6 +339,8 @@ mod s_maximum_value_of_an_ordered_triplet_ii;
 mod s_minimum_increment_operations_to_make_array_beautiful;
 #[path = "bin/2965.find-missing-and-repeated-values.rs"]
 mod s_find_missing_and_repeated_values;
+#[path = "bin/2999.count-the-number-of-powerful-integers.rs"]
+mod s_count_the_number_of_powerful_integers;
 #[path = "bin/3108.minimum-cost-walk-in-weighted-graph.rs"]
 mod s_minimum_cost_walk_in_weighted_graph;
 #[path = "bin/3116.kth-smallest-amount-with-single-denomination-combination.rs"]
