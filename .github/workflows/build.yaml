@@ -26,7 +26,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build Modules
-      run: /bin/bash ./scripts/update_main_mods.py
+      run: python3 ./scripts/update_main_mods.py
     - name: Check Changes
       run: git diff --exit-code
   
