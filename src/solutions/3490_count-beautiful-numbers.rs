@@ -9,7 +9,6 @@ use std::collections::HashMap;
 
 #[allow(dead_code)]
 impl Solution {
-    #[allow(clippy::too_many_arguments)]
     fn digit_dp(
         pos: usize,
         cur_prod: i32,
