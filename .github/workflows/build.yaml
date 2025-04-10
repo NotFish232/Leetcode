@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build Modules
-        run: pip3 install natsort && python3 ./scripts/update_main_mods.py && git diff --exit-code
+        run: pip3 install natsort && ./scripts/update_main_mods.py && git diff --exit-code
 
   linting:
     runs-on: ubuntu-latest
@@ -34,6 +34,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check Formatting
-        run: /bin/bash ./scripts/format.sh && git diff --exit-code
+        run: ./scripts/format.sh && git diff --exit-code
       - name: Check Lints
-        run: cargo clippy -- -D warnings
+        run: ./scripts/linting.sh

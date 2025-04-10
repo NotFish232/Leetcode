@@ -16,7 +16,7 @@ impl Solution {
             if i < 3 {
                 dp[i] = max(k - num, 0) as i64;
             } else {
-                dp[i] = max(k - num, 0) as i64 + *dp[i - 3..i].iter().min().unwrap() as i64;
+                dp[i] = max(k - num, 0) as i64 + *dp[i - 3..i].iter().min().unwrap();
             }
         }
 
