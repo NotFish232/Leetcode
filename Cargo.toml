@@ -5,3 +5,9 @@ edition = "2024"
 
 [dependencies]
 itertools = "0.14.0"
+
+[lints.clippy]
+needless_range_loop = "allow"
+if_same_then_else = "allow"
+collapsible_else_if = "allow"
+too_many_arguments = "allow"
