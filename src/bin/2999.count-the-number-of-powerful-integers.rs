@@ -11,7 +11,6 @@ use std::{cmp::min, collections::HashMap};
 impl Solution {
     fn create_lps(s: &[i32]) -> Vec<usize> {
         let mut lps = vec![0; s.len()];
-        lps[0] = 0;
 
         let mut i = 1;
         let mut len = 0;
