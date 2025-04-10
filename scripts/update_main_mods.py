@@ -4,7 +4,7 @@ from pathlib import Path
 from natsort import natsorted
 import re
 
-SOLUTION_DIR = "src/bin/"
+SOLUTION_DIR = "src/solutions/"
 
 LIB_PATH = "src/lib.rs"
 
@@ -18,10 +18,10 @@ def main() -> None:
     for solution_file in natsorted(Path(SOLUTION_DIR).glob("*.rs")):
         solution_file = Path(*solution_file.parts[1:])
 
-        solution_path = solution_file.name
+        solution_path = solution_file.stem
 
         path_statement = f'#[path = "{solution_file}"]'
-        mod_statement = f"mod s_{solution_path.split('.')[1].replace('-', '_')};"
+        mod_statement = f"mod s_{solution_path.replace('-', '_')};"
 
         import_statements.append(f"{path_statement}\n{mod_statement}\n")
 
