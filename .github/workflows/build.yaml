@@ -1,0 +1,43 @@
+name: Check Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build
+      run: cargo build --verbose
+    - name: Run Tests
+      run: cargo test --verbose
+  
+  modules:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build Modules
+      run: /bin/bash ./scripts/update_main_mods.py
+    - name: Check Changes
+      run: git diff --exit-code
+  
+  linting:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check Formatting
+      run: /bin/bash ./scripts/format.sh
+    - name: Check Changes
+      run: git diff --exit-code
+    - name: Check Lints
+      run: cargo clippy -- -D warnings
