@@ -2,9 +2,9 @@ name: Check Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 env:
   CARGO_TERM_COLOR: always
@@ -14,30 +14,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build
-      run: cargo build --verbose
-    - name: Run Tests
-      run: cargo test --verbose
-  
+      - uses: actions/checkout@v4
+      - name: Build
+        run: cargo build --verbose
+      - name: Run Tests
+        run: cargo test --verbose
+
   modules:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build Modules
-      run: pip3 install natsort && python3 ./scripts/update_main_mods.py
-    - name: Check Changes
-      run: git diff --exit-code
-  
+      - uses: actions/checkout@v4
+      - name: Build Modules
+        run: pip3 install natsort && python3 ./scripts/update_main_mods.py && git diff --exit-code
+
   linting:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Check Formatting
-      run: /bin/bash ./scripts/format.sh
-    - name: Check Changes
-      run: git diff --exit-code
-    - name: Check Lints
-      run: cargo clippy -- -D warnings
+      - uses: actions/checkout@v4
+      - name: Check Formatting
+        run: /bin/bash ./scripts/format.sh && git diff --exit-code
+      - name: Check Lints
+        run: cargo clippy -- -D warnings
