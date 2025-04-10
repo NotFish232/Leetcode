@@ -41,11 +41,7 @@ impl Solution {
             idx = lps[idx - 1];
         }
 
-        if s[idx] == d {
-            idx + 1
-        } else {
-            0
-        }
+        if s[idx] == d { idx + 1 } else { 0 }
     }
 
     fn digit_dp(
@@ -120,18 +116,7 @@ impl Solution {
 
         let lps = Self::create_lps(&v_s);
 
-        Self::digit_dp(
-            0,
-            0,
-            1,
-            1,
-            limit,
-            &v_l,
-            &v_r,
-            &v_s,
-            &lps,
-            &mut dp,
-        )
+        Self::digit_dp(0, 0, 1, 1, limit, &v_l, &v_r, &v_s, &lps, &mut dp)
     }
 }
 // end_submission
