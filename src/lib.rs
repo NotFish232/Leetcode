@@ -245,6 +245,8 @@ mod s_check_if_a_string_can_break_another_string;
 mod s_maximum_number_of_vowels_in_a_substring_of_given_length;
 #[path = "bin/1524.number-of-sub-arrays-with-odd-sum.rs"]
 mod s_number_of_sub_arrays_with_odd_sum;
+#[path = "bin/1567.maximum-length-of-subarray-with-positive-product.rs"]
+mod s_maximum_length_of_subarray_with_positive_product;
 #[path = "bin/1665.minimum-initial-energy-to-finish-tasks.rs"]
 mod s_minimum_initial_energy_to_finish_tasks;
 #[path = "bin/1718.construct-the-lexicographically-largest-valid-sequence.rs"]
