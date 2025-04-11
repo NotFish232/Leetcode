@@ -328,6 +328,8 @@ mod s_2780_minimum_index_of_a_valid_split;
 mod s_2818_apply_operations_to_maximize_score;
 #[path = "solutions/2828_check-if-a-string-is-an-acronym-of-words.rs"]
 mod s_2828_check_if_a_string_is_an_acronym_of_words;
+#[path = "solutions/2843_count-symmetric-integers.rs"]
+mod s_2843_count_symmetric_integers;
 #[path = "solutions/2873_maximum-value-of-an-ordered-triplet-i.rs"]
 mod s_2873_maximum_value_of_an_ordered_triplet_i;
 #[path = "solutions/2874_maximum-value-of-an-ordered-triplet-ii.rs"]
