@@ -356,6 +356,8 @@ mod s_3207_maximum_points_after_enemy_battles;
 mod s_3208_alternating_groups_ii;
 #[path = "solutions/3271_hash-divided-string.rs"]
 mod s_3271_hash_divided_string;
+#[path = "solutions/3272_find-the-count-of-good-integers.rs"]
+mod s_3272_find_the_count_of_good_integers;
 #[path = "solutions/3273_minimum-amount-of-damage-dealt-to-bob.rs"]
 mod s_3273_minimum_amount_of_damage_dealt_to_bob;
 #[path = "solutions/3280_convert-date-to-binary.rs"]
