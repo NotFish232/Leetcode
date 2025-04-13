@@ -15,8 +15,8 @@ impl Solution {
             if exp % 2 == 1 {
                 res = (res * base) % Self::MOD;
             }
-            base = (base * base) % Self::MOD;
 
+            base = (base * base) % Self::MOD;
             exp /= 2;
         }
 
