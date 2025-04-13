@@ -254,6 +254,8 @@ mod s_1780_check_if_number_is_a_sum_of_powers_of_three;
 mod s_1863_sum_of_all_subset_xor_totals;
 #[path = "solutions/1910_remove-all-occurrences-of-a-substring.rs"]
 mod s_1910_remove_all_occurrences_of_a_substring;
+#[path = "solutions/1922_count-good-numbers.rs"]
+mod s_1922_count_good_numbers;
 #[path = "solutions/1976_number-of-ways-to-arrive-at-destination.rs"]
 mod s_1976_number_of_ways_to_arrive_at_destination;
 #[path = "solutions/1980_find-unique-binary-string.rs"]
