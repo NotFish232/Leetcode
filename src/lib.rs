@@ -240,6 +240,8 @@ mod s_1433_check_if_a_string_can_break_another_string;
 mod s_1456_maximum_number_of_vowels_in_a_substring_of_given_length;
 #[path = "solutions/1524_number-of-sub-arrays-with-odd-sum.rs"]
 mod s_1524_number_of_sub_arrays_with_odd_sum;
+#[path = "solutions/1534_count-good-triplets.rs"]
+mod s_1534_count_good_triplets;
 #[path = "solutions/1567_maximum-length-of-subarray-with-positive-product.rs"]
 mod s_1567_maximum_length_of_subarray_with_positive_product;
 #[path = "solutions/1665_minimum-initial-energy-to-finish-tasks.rs"]
