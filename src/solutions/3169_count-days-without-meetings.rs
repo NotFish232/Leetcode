@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::{cmp::Reverse, collections::BinaryHeap};
 
-#[allow(dead_code)]
 impl Solution {
     pub fn count_days(days: i32, meetings: Vec<Vec<i32>>) -> i32 {
         let mut h = BinaryHeap::new();

@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
         match nums.binary_search(&target) {

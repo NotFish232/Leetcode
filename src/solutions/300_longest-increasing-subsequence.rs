@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn length_of_lis(nums: Vec<i32>) -> i32 {
         let mut dp = vec![1; nums.len()];

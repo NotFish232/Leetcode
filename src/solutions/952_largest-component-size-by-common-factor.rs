@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -48,7 +47,6 @@ impl Dsu {
     }
 }
 
-#[allow(dead_code)]
 impl Solution {
     fn find_prime_factors(mut x: i32) -> Vec<i32> {
         let mut prime_factors = Vec::new();

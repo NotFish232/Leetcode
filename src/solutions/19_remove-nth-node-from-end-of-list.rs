@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn remove_nth_from_end(mut head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
         let mut p = &head;

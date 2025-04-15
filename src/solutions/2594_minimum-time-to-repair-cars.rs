@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn repair_cars(ranks: Vec<i32>, cars: i32) -> i64 {
         let (mut l, mut r) = (

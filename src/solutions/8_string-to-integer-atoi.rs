@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn my_atoi(s: String) -> i32 {
         let mut num: i64 = 0;

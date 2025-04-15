@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn letter_combinations(digits: String) -> Vec<String> {
         if digits.is_empty() {

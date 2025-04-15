@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::{max, min};
 
-#[allow(dead_code)]
 impl Solution {
     pub fn find_median_sorted_arrays(nums1: Vec<i32>, nums2: Vec<i32>) -> f64 {
         let mut idx_1 = 0;

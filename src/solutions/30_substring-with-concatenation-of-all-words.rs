@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn find_substring(s: String, words: Vec<String>) -> Vec<i32> {
         let words_s = words.join("");

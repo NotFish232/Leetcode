@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn maximum_points(enemy_energies: Vec<i32>, mut current_energy: i32) -> i64 {
         let (min_idx, min_val) = enemy_energies

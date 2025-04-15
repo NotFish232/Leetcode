@@ -1,4 +1,5 @@
 #![cfg_attr(rustfmt, rustfmt_skip)]
+#![allow(dead_code)]
 
 // mod_start
 #[path = "1_two-sum.rs"]

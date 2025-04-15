@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 impl Solution {
     fn gen_people_bitmasks(people: &Vec<Vec<String>>, req_skills: &[String]) -> Vec<usize> {
         let req_skills_map: HashMap<_, _> =

@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn multiply(num1: String, num2: String) -> String {
         let mut v = vec![0; num1.len() * num2.len()];

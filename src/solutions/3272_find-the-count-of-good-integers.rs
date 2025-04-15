@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::HashSet;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn count_good_integers(n: i32, k: i32) -> i64 {
         let mut h: HashSet<String> = HashSet::new();

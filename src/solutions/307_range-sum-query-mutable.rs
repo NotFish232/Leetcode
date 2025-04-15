@@ -1,17 +1,14 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 struct NumArray {
     tree: Vec<i32>,
     n: usize,
 }
 
-#[allow(dead_code)]
 impl NumArray {
     fn new(nums: Vec<i32>) -> Self {
         let n = nums.len();

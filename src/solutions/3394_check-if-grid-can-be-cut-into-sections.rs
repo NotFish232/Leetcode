@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::max;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn check_valid_cuts(_n: i32, rectangles: Vec<Vec<i32>>) -> bool {
         let mut x_intervals = Vec::new();

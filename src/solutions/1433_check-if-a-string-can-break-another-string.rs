@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn check_if_can_break(s1: String, s2: String) -> bool {
         let mut v1: Vec<_> = s1.chars().collect();

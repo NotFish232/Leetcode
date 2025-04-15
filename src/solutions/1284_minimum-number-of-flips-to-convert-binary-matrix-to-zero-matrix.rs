@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::{HashMap, VecDeque, hash_map::Entry};
 
-#[allow(dead_code)]
 impl Solution {
     fn bit_encode(mat: &[Vec<i32>]) -> i32 {
         let n = mat[0].len();

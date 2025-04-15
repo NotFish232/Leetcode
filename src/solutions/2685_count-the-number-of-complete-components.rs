@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -44,7 +43,6 @@ impl Dsu {
     }
 }
 
-#[allow(dead_code)]
 impl Solution {
     pub fn count_complete_components(n: i32, edges: Vec<Vec<i32>>) -> i32 {
         let mut dsu = Dsu::new(n as usize);

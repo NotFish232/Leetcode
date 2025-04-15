@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::max;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn longest_common_subsequence(text1: String, text2: String) -> i32 {
         let mut dp = vec![vec![0; text2.len() + 1]; text1.len() + 1];

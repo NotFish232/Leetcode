@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::{max, min};
 
-#[allow(dead_code)]
 impl Solution {
     pub fn most_points(questions: Vec<Vec<i32>>) -> i64 {
         let mut v = vec![0; questions.len() + 1];

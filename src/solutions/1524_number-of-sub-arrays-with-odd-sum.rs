@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn num_of_subarrays(mut arr: Vec<i32>) -> i32 {
         for i in 1..arr.len() {

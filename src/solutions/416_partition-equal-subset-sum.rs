@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::HashSet;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn sums_to(nums: &[i32], n: i32) -> Vec<HashSet<usize>> {
         let mut dp = vec![vec![usize::MAX; n as usize + 1]; nums.len()];

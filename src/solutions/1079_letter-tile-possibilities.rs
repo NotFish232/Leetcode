@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::HashSet;
 
-#[allow(dead_code)]
 impl Solution {
     fn _num_tile_possibilities(
         current: &mut String,

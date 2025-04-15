@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -9,7 +8,6 @@ use std::cell::RefCell;
 use std::cmp::{Ordering, max};
 use std::rc::Rc;
 
-#[allow(dead_code)]
 impl Solution {
     fn count_depth(node: &Option<Rc<RefCell<TreeNode>>>) -> i32 {
         if node.is_none() {

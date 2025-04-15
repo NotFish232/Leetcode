@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn pivot_array(nums: Vec<i32>, pivot: i32) -> Vec<i32> {
         let mut prev = Vec::new();

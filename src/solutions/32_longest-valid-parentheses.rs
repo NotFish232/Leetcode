@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::max;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn longest_valid_parentheses(s: String) -> i32 {
         let mut v = vec![0; s.len() + 1];

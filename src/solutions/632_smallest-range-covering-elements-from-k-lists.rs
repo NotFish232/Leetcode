@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -10,7 +9,6 @@ use std::{
     collections::BinaryHeap,
 };
 
-#[allow(dead_code)]
 impl Solution {
     pub fn smallest_range(nums: Vec<Vec<i32>>) -> Vec<i32> {
         let mut cur_range = (0, i32::MAX);

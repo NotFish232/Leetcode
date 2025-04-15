@@ -1,19 +1,16 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 struct Encrypter {
     key_to_val: HashMap<char, String>,
     encrypted_to_count: HashMap<String, i32>,
 }
 
-#[allow(dead_code)]
 impl Encrypter {
     fn new(keys: Vec<char>, values: Vec<String>, dictionary: Vec<String>) -> Self {
         let key_to_val = keys.into_iter().zip(values).collect();

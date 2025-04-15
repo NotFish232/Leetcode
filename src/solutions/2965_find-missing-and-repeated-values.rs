@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn find_missing_and_repeated_values(grid: Vec<Vec<i32>>) -> Vec<i32> {
         let mut v = vec![false; grid.len() * grid[0].len()];

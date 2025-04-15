@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::max;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn max_profit(k: i32, prices: Vec<i32>) -> i32 {
         let mut buys = vec![-prices[0]; k as usize];

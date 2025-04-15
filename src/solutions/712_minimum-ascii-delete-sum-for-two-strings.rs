@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::min;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn minimum_delete_sum(s1: String, s2: String) -> i32 {
         let mut dp = vec![vec![0; s2.len() + 1]; s1.len() + 1];

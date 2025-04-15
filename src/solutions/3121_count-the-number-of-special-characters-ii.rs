@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::{HashMap, HashSet, hash_map::Entry};
 
-#[allow(dead_code)]
 impl Solution {
     pub fn number_of_special_chars(word: String) -> i32 {
         let mut seen_chars = HashSet::new();

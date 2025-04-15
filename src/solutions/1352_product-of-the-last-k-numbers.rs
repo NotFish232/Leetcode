@@ -1,17 +1,14 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 struct ProductOfNumbers {
     v: Vec<i32>,
     prod: i32,
 }
 
-#[allow(dead_code)]
 impl ProductOfNumbers {
     fn new() -> Self {
         Self {

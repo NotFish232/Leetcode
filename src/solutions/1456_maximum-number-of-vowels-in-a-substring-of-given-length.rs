@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::max;
 
-#[allow(dead_code)]
 impl Solution {
     fn is_vowel(ch: u8) -> bool {
         ch == b'a' || ch == b'e' || ch == b'i' || ch == b'o' || ch == b'u'

@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::max;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn longest_ones(nums: Vec<i32>, k: i32) -> i32 {
         let (mut l, mut r) = (0, 0);

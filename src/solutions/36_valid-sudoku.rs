@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
         let mut cs = Vec::new();

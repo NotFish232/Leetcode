@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::{cmp::max, collections::HashSet};
 
-#[allow(dead_code)]
 impl Solution {
     fn find_all_alice_paths(
         current_path: &mut Vec<usize>,

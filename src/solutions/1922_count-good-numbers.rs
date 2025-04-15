@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     const MOD: i64 = 1_000_000_007;
     fn mod_pow(mut base: i64, mut exp: i64) -> i64 {

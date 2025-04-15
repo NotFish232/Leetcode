@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     fn solve(c: i32, idx: usize, nums: &[i32]) -> i32 {
         if idx == nums.len() {

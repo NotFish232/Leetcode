@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::collections::HashMap;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn maximum_sum(nums: Vec<i32>) -> i32 {
         let mut m: HashMap<u32, i32> = HashMap::new();

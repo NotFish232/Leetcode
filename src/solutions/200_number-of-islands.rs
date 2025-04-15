@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -45,7 +44,6 @@ impl Dsu {
     }
 }
 
-#[allow(dead_code)]
 impl Solution {
     pub fn num_islands(grid: Vec<Vec<char>>) -> i32 {
         let m = grid.len();

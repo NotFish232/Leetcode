@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -9,7 +8,6 @@ use std::cell::RefCell;
 use std::collections::VecDeque;
 use std::rc::Rc;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn recover_from_preorder(traversal: String) -> Option<Rc<RefCell<TreeNode>>> {
         let mut traversal_chunks = VecDeque::new();

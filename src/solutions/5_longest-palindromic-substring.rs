@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     fn get_len(bytes: &[u8], i1: usize, i2: usize) -> usize {
         2 + if i1 > 0 && i2 + 1 < bytes.len() && bytes[i1 - 1] == bytes[i2 + 1] {

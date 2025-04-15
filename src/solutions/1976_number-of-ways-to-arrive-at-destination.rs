@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::{cmp::Reverse, collections::BinaryHeap};
 
-#[allow(dead_code)]
 impl Solution {
     const MOD: i64 = 1_000_000_007;
 

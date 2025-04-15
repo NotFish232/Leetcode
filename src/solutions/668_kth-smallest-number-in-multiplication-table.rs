@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::min;
 
-#[allow(dead_code)]
 impl Solution {
     fn is_greater_than_how_many(x: i32, m: i32, n: i32) -> i32 {
         let mut count = 0;

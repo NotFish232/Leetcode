@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -10,7 +9,6 @@ use std::{
     iter::repeat_n,
 };
 
-#[allow(dead_code)]
 impl Solution {
     pub fn compare_version(version1: String, version2: String) -> i32 {
         let mut v1_parts: Vec<i32> = version1.split('.').map(|x| x.parse().unwrap()).collect();

@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn swap_pairs(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         head.as_ref()?;

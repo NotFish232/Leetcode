@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn maximum_candies(candies: Vec<i32>, k: i64) -> i32 {
         let max_candies = candies.iter().map(|&i| i as i64).sum::<i64>() / k;

@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     fn num_pairs_within_dist(nums: &[i32], dist: i32) -> i32 {
         let (mut l, mut r) = (0, 1);

@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -60,7 +59,6 @@ impl STree {
     }
 }
 
-#[allow(dead_code)]
 impl Solution {
     pub fn good_triplets(nums1: Vec<i32>, nums2: Vec<i32>) -> i64 {
         let mut n2_val_to_idx = vec![0; nums1.len()];

@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -45,7 +44,6 @@ impl Dsu {
     }
 }
 
-#[allow(dead_code)]
 impl Solution {
     pub fn longest_consecutive(nums: Vec<i32>) -> i32 {
         let mut dsu = Dsu::new(nums.len());

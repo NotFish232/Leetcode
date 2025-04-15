@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn closest_primes(left: i32, right: i32) -> Vec<i32> {
         let mut v = vec![true; right as usize + 1];

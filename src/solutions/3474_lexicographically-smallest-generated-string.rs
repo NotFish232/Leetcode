@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     fn make_lps(str: &str) -> Vec<usize> {
         let str_chars: Vec<_> = str.chars().collect();

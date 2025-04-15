@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn minimum_replacement(nums: Vec<i32>) -> i64 {
         let mut current_max = *nums.last().unwrap() as i64;

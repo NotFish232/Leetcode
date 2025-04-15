@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::{cmp::max, collections::HashMap};
 
-#[allow(dead_code)]
 impl Solution {
     pub fn partition_labels(s: String) -> Vec<i32> {
         let mut first_occur = HashMap::new();

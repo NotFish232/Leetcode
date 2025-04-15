@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn apply_operations(mut nums: Vec<i32>) -> Vec<i32> {
         let mut v = vec![0; nums.len()];

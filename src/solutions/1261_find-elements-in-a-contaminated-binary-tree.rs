@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -9,12 +8,10 @@ use std::cell::RefCell;
 use std::collections::HashSet;
 use std::rc::Rc;
 
-#[allow(dead_code)]
 struct FindElements {
     hs: HashSet<i32>,
 }
 
-#[allow(dead_code)]
 impl FindElements {
     fn new(root: Option<Rc<RefCell<TreeNode>>>) -> Self {
         let mut hs = HashSet::new();

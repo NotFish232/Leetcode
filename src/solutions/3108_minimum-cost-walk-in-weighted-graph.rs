@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -44,7 +43,6 @@ impl DisjointSetUnion {
     }
 }
 
-#[allow(dead_code)]
 impl Solution {
     pub fn minimum_cost(n: i32, edges: Vec<Vec<i32>>, query: Vec<Vec<i32>>) -> Vec<i32> {
         let mut dsu = DisjointSetUnion::new(n as usize);

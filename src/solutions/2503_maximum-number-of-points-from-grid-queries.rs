@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -42,7 +41,6 @@ impl Dsu {
     }
 }
 
-#[allow(dead_code)]
 impl Solution {
     pub fn max_points(grid: Vec<Vec<i32>>, queries: Vec<i32>) -> Vec<i32> {
         let (n, m) = (grid.len(), grid[0].len());

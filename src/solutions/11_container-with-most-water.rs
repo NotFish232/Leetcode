@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::cmp::{max, min};
 
-#[allow(dead_code)]
 impl Solution {
     pub fn max_area(height: Vec<i32>) -> i32 {
         let mut left_ptr = 0;

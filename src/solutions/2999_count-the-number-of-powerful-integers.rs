@@ -1,13 +1,11 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
 use std::{cmp::min, collections::HashMap};
 
-#[allow(dead_code)]
 impl Solution {
     fn create_lps(s: &[i32]) -> Vec<usize> {
         let mut lps = vec![0; s.len()];

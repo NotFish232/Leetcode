@@ -1,11 +1,9 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
-#[allow(dead_code)]
 impl Solution {
     pub fn can_cross(stones: Vec<i32>) -> bool {
         let mut dp = vec![vec![false; stones.len() + 1]; stones.len()];

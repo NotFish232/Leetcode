@@ -1,7 +1,6 @@
 #[allow(unused)]
 use crate::stubs::*;
 
-#[allow(dead_code)]
 struct Solution;
 
 // start_submission
@@ -20,7 +19,6 @@ macro_rules! tree_copy {
 use std::cell::RefCell;
 use std::rc::Rc;
 
-#[allow(dead_code)]
 impl Solution {
     pub fn construct_from_pre_post(
         mut preorder: Vec<i32>,
