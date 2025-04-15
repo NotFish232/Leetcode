@@ -86,7 +86,7 @@ impl Solution {
             r_tree.update(pos, 0);
 
             let left = l_tree.query(0, pos - 1);
-            let right = r_tree.query(pos + 1, nums1.len());
+            let right = r_tree.query(pos + 1, nums1.len() - 1);
             count += left as i64 * right as i64;
         }
 
