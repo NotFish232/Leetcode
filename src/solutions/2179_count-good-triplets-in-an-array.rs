@@ -80,13 +80,12 @@ impl Solution {
         let mut count = 0;
 
         for i in 1..positions.len() - 1 {
+            l_tree.update(positions[i], 1);
             r_tree.update(positions[i], 0);
 
             let left = l_tree.query(0, positions[i] - 1);
             let right = r_tree.query(positions[i] + 1, positions.len());
             count += left as i64 * right as i64;
-
-            l_tree.update(positions[i], 1);
         }
 
         count
