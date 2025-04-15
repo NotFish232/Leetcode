@@ -278,6 +278,8 @@ mod s_2154_keep_multiplying_found_values_by_two;
 mod s_2161_partition_array_according_to_given_pivot;
 #[path = "solutions/2177_find-three-consecutive-integers-that-sum-to-a-given-number.rs"]
 mod s_2177_find_three_consecutive_integers_that_sum_to_a_given_number;
+#[path = "solutions/2179_count-good-triplets-in-an-array.rs"]
+mod s_2179_count_good_triplets_in_an_array;
 #[path = "solutions/2206_divide-array-into-equal-pairs.rs"]
 mod s_2206_divide_array_into_equal_pairs;
 #[path = "solutions/2226_maximum-candies-allocated-to-k-children.rs"]
