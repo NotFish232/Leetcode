@@ -1,5 +1,4 @@
-#[allow(dead_code)]
-mod disjoint_set_union;
+#![allow(dead_code)]
 
-#[allow(dead_code)]
+mod disjoint_set_union;
 mod segment_tree;
