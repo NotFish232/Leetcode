@@ -308,6 +308,8 @@ mod s_2503_maximum_number_of_points_from_grid_queries;
 mod s_2523_closest_prime_numbers_in_range;
 #[path = "2529_maximum-count-of-positive-integer-and-negative-integer.rs"]
 mod s_2529_maximum_count_of_positive_integer_and_negative_integer;
+#[path = "2537_count-the-number-of-good-subarrays.rs"]
+mod s_2537_count_the_number_of_good_subarrays;
 #[path = "2540_minimum-common-value.rs"]
 mod s_2540_minimum_common_value;
 #[path = "2551_put-marbles-in-bags.rs"]
