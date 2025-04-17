@@ -274,6 +274,8 @@ mod s_2140_solving_questions_with_brainpower;
 mod s_2154_keep_multiplying_found_values_by_two;
 #[path = "2161_partition-array-according-to-given-pivot.rs"]
 mod s_2161_partition_array_according_to_given_pivot;
+#[path = "2176_count-equal-and-divisible-pairs-in-an-array.rs"]
+mod s_2176_count_equal_and_divisible_pairs_in_an_array;
 #[path = "2177_find-three-consecutive-integers-that-sum-to-a-given-number.rs"]
 mod s_2177_find_three_consecutive_integers_that_sum_to_a_given_number;
 #[path = "2179_count-good-triplets-in-an-array.rs"]
