@@ -318,6 +318,8 @@ mod s_2540_minimum_common_value;
 mod s_2551_put_marbles_in_bags;
 #[path = "2560_house-robber-iv.rs"]
 mod s_2560_house_robber_iv;
+#[path = "2563_count-the-number-of-fair-pairs.rs"]
+mod s_2563_count_the_number_of_fair_pairs;
 #[path = "2570_merge-two-2d-arrays-by-summing-values.rs"]
 mod s_2570_merge_two_2d_arrays_by_summing_values;
 #[path = "2579_count-total-number-of-colored-cells.rs"]
