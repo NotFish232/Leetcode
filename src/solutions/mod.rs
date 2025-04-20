@@ -224,6 +224,8 @@ mod s_1143_longest_common_subsequence;
 mod s_1220_count_vowels_permutation;
 #[path = "1261_find-elements-in-a-contaminated-binary-tree.rs"]
 mod s_1261_find_elements_in_a_contaminated_binary_tree;
+#[path = "1282_group-the-people-given-the-group-size-they-belong-to.rs"]
+mod s_1282_group_the_people_given_the_group_size_they_belong_to;
 #[path = "1284_minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.rs"]
 mod s_1284_minimum_number_of_flips_to_convert_binary_matrix_to_zero_matrix;
 #[path = "1352_product-of-the-last-k-numbers.rs"]
