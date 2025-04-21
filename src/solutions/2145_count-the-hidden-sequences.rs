@@ -5,6 +5,7 @@ struct Solution;
 
 // start_submission
 use std::cmp::{max, min};
+
 impl Solution {
     pub fn number_of_arrays(differences: Vec<i32>, lower: i32, upper: i32) -> i32 {
         let mut min_val = 0;
