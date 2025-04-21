@@ -274,6 +274,8 @@ mod s_2108_find_first_palindromic_string_in_the_array;
 mod s_2115_find_all_possible_recipes_from_given_supplies;
 #[path = "2140_solving-questions-with-brainpower.rs"]
 mod s_2140_solving_questions_with_brainpower;
+#[path = "2145_count-the-hidden-sequences.rs"]
+mod s_2145_count_the_hidden_sequences;
 #[path = "2154_keep-multiplying-found-values-by-two.rs"]
 mod s_2154_keep_multiplying_found_values_by_two;
 #[path = "2161_partition-array-according-to-given-pivot.rs"]
