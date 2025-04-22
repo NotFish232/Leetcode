@@ -296,6 +296,8 @@ mod s_2227_encrypt_and_decrypt_strings;
 mod s_2274_maximum_consecutive_floors_without_special_floors;
 #[path = "2310_sum-of-numbers-with-units-digit-k.rs"]
 mod s_2310_sum_of_numbers_with_units_digit_k;
+#[path = "2338_count-the-number-of-ideal-arrays.rs"]
+mod s_2338_count_the_number_of_ideal_arrays;
 #[path = "2342_max-sum-of-a-pair-with-equal-sum-of-digits.rs"]
 mod s_2342_max_sum_of_a_pair_with_equal_sum_of_digits;
 #[path = "2366_minimum-replacements-to-sort-the-array.rs"]
