@@ -234,6 +234,8 @@ mod s_1352_product_of_the_last_k_numbers;
 mod s_1358_number_of_substrings_containing_all_three_characters;
 #[path = "1389_create-target-array-in-the-given-order.rs"]
 mod s_1389_create_target_array_in_the_given_order;
+#[path = "1399_count-largest-group.rs"]
+mod s_1399_count_largest_group;
 #[path = "1415_the-k-th-lexicographical-string-of-all-happy-strings-of-length-n.rs"]
 mod s_1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n;
 #[path = "1433_check-if-a-string-can-break-another-string.rs"]
