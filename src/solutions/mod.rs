@@ -344,6 +344,8 @@ mod s_2685_count_the_number_of_complete_components;
 mod s_2719_count_of_integers;
 #[path = "2780_minimum-index-of-a-valid-split.rs"]
 mod s_2780_minimum_index_of_a_valid_split;
+#[path = "2799_count-complete-subarrays-in-an-array.rs"]
+mod s_2799_count_complete_subarrays_in_an_array;
 #[path = "2818_apply-operations-to-maximize-score.rs"]
 mod s_2818_apply_operations_to_maximize_score;
 #[path = "2828_check-if-a-string-is-an-acronym-of-words.rs"]
