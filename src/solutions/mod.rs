@@ -208,6 +208,8 @@ mod s_952_largest_component_size_by_common_factor;
 mod s_992_subarrays_with_k_different_integers;
 #[path = "1004_max-consecutive-ones-iii.rs"]
 mod s_1004_max_consecutive_ones_iii;
+#[path = "1015_smallest-integer-divisible-by-k.rs"]
+mod s_1015_smallest_integer_divisible_by_k;
 #[path = "1028_recover-a-tree-from-preorder-traversal.rs"]
 mod s_1028_recover_a_tree_from_preorder_traversal;
 #[path = "1079_letter-tile-possibilities.rs"]
