@@ -354,6 +354,8 @@ mod s_2818_apply_operations_to_maximize_score;
 mod s_2828_check_if_a_string_is_an_acronym_of_words;
 #[path = "2843_count-symmetric-integers.rs"]
 mod s_2843_count_symmetric_integers;
+#[path = "2845_count-of-interesting-subarrays.rs"]
+mod s_2845_count_of_interesting_subarrays;
 #[path = "2873_maximum-value-of-an-ordered-triplet-i.rs"]
 mod s_2873_maximum_value_of_an_ordered_triplet_i;
 #[path = "2874_maximum-value-of-an-ordered-triplet-ii.rs"]
