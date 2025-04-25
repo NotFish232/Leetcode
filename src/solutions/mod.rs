@@ -366,6 +366,8 @@ mod s_2919_minimum_increment_operations_to_make_array_beautiful;
 mod s_2965_find_missing_and_repeated_values;
 #[path = "2999_count-the-number-of-powerful-integers.rs"]
 mod s_2999_count_the_number_of_powerful_integers;
+#[path = "3039_apply-operations-to-make-string-empty.rs"]
+mod s_3039_apply_operations_to_make_string_empty;
 #[path = "3108_minimum-cost-walk-in-weighted-graph.rs"]
 mod s_3108_minimum_cost_walk_in_weighted_graph;
 #[path = "3116_kth-smallest-amount-with-single-denomination-combination.rs"]
