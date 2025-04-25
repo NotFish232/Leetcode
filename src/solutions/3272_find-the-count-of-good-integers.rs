@@ -17,7 +17,7 @@ impl Solution {
             let s = i.to_string();
             let rev: String = s.chars().rev().skip(skip).collect();
 
-            let p = format!("{}{}", s, rev);
+            let p = format!("{s}{rev}");
 
             if p.parse::<i64>().unwrap() % (k as i64) == 0 {
                 let mut s_p: Vec<char> = p.chars().collect();

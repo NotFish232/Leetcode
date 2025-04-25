@@ -14,7 +14,7 @@ impl Solution {
 
         let mut res = String::new();
 
-        for (i, c) in s.chars().enumerate() {
+        for c in s.chars() {
             *counts.entry(c).or_insert(0) += 1;
 
             match counts[&c].cmp(&max_count) {
