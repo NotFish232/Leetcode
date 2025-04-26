@@ -3,11 +3,11 @@ use crate::stubs::*;
 
 struct Solution;
 
- // start_submission
- use std::collections::{hash_map::Entry, HashMap};
+// start_submission
+use std::collections::{HashMap, hash_map::Entry};
 
 impl Solution {
-    fn solve_inclusive(nums: &[i32], min_k: i32, max_k: i32) ->  i64 {
+    fn solve_inclusive(nums: &[i32], min_k: i32, max_k: i32) -> i64 {
         let mut res = 0;
 
         let (mut l, mut r) = (0, 0);
@@ -48,8 +48,7 @@ impl Solution {
             }
         }
 
-
         res
     }
 }
- // end_submission
+// end_submission
