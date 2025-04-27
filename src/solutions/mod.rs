@@ -400,6 +400,8 @@ mod s_3306_count_of_substrings_containing_every_vowel_and_k_consonants_ii;
 mod s_3356_zero_array_transformation_ii;
 #[path = "3375_minimum-operations-to-make-array-values-equal-to-k.rs"]
 mod s_3375_minimum_operations_to_make_array_values_equal_to_k;
+#[path = "3392_count-subarrays-of-length-three-with-a-condition.rs"]
+mod s_3392_count_subarrays_of_length_three_with_a_condition;
 #[path = "3394_check-if-grid-can-be-cut-into-sections.rs"]
 mod s_3394_check_if_grid_can_be_cut_into_sections;
 #[path = "3396_minimum-number-of-operations-to-make-elements-in-array-distinct.rs"]
