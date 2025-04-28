@@ -300,6 +300,8 @@ mod s_2226_maximum_candies_allocated_to_k_children;
 mod s_2227_encrypt_and_decrypt_strings;
 #[path = "2274_maximum-consecutive-floors-without-special-floors.rs"]
 mod s_2274_maximum_consecutive_floors_without_special_floors;
+#[path = "2302_count-subarrays-with-score-less-than-k.rs"]
+mod s_2302_count_subarrays_with_score_less_than_k;
 #[path = "2310_sum-of-numbers-with-units-digit-k.rs"]
 mod s_2310_sum_of_numbers_with_units_digit_k;
 #[path = "2338_count-the-number-of-ideal-arrays.rs"]
