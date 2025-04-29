@@ -370,6 +370,8 @@ mod s_2873_maximum_value_of_an_ordered_triplet_i;
 mod s_2874_maximum_value_of_an_ordered_triplet_ii;
 #[path = "2919_minimum-increment-operations-to-make-array-beautiful.rs"]
 mod s_2919_minimum_increment_operations_to_make_array_beautiful;
+#[path = "2962_count-subarrays-where-max-element-appears-at-least-k-times.rs"]
+mod s_2962_count_subarrays_where_max_element_appears_at_least_k_times;
 #[path = "2965_find-missing-and-repeated-values.rs"]
 mod s_2965_find_missing_and_repeated_values;
 #[path = "2999_count-the-number-of-powerful-integers.rs"]
