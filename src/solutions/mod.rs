@@ -234,6 +234,8 @@ mod s_1261_find_elements_in_a_contaminated_binary_tree;
 mod s_1282_group_the_people_given_the_group_size_they_belong_to;
 #[path = "1284_minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix.rs"]
 mod s_1284_minimum_number_of_flips_to_convert_binary_matrix_to_zero_matrix;
+#[path = "1295_find-numbers-with-even-number-of-digits.rs"]
+mod s_1295_find_numbers_with_even_number_of_digits;
 #[path = "1352_product-of-the-last-k-numbers.rs"]
 mod s_1352_product_of_the_last_k_numbers;
 #[path = "1358_number-of-substrings-containing-all-three-characters.rs"]
