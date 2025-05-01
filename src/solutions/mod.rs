@@ -278,6 +278,8 @@ mod s_1980_find_unique_binary_string;
 mod s_2033_minimum_operations_to_make_a_uni_value_grid;
 #[path = "2068_check-whether-two-strings-are-almost-equivalent.rs"]
 mod s_2068_check_whether_two_strings_are_almost_equivalent;
+#[path = "2071_maximum-number-of-tasks-you-can-assign.rs"]
+mod s_2071_maximum_number_of_tasks_you_can_assign;
 #[path = "2108_find-first-palindromic-string-in-the-array.rs"]
 mod s_2108_find_first_palindromic_string_in_the_array;
 #[path = "2115_find-all-possible-recipes-from-given-supplies.rs"]
