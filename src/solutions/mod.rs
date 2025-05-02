@@ -208,6 +208,8 @@ mod s_889_construct_binary_tree_from_preorder_and_postorder_traversal;
 mod s_898_bitwise_ors_of_subarrays;
 #[path = "952_largest-component-size-by-common-factor.rs"]
 mod s_952_largest_component_size_by_common_factor;
+#[path = "985_sum-of-even-numbers-after-queries.rs"]
+mod s_985_sum_of_even_numbers_after_queries;
 #[path = "992_subarrays-with-k-different-integers.rs"]
 mod s_992_subarrays_with_k_different_integers;
 #[path = "1004_max-consecutive-ones-iii.rs"]
