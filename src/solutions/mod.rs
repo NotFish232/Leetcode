@@ -104,6 +104,8 @@ mod s_56_merge_intervals;
 mod s_66_plus_one;
 #[path = "75_sort-colors.rs"]
 mod s_75_sort_colors;
+#[path = "78_subsets.rs"]
+mod s_78_subsets;
 #[path = "94_binary-tree-inorder-traversal.rs"]
 mod s_94_binary_tree_inorder_traversal;
 #[path = "121_best-time-to-buy-and-sell-stock.rs"]
