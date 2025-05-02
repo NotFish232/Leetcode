@@ -252,6 +252,8 @@ mod s_1415_the_k_th_lexicographical_string_of_all_happy_strings_of_length_n;
 mod s_1433_check_if_a_string_can_break_another_string;
 #[path = "1456_maximum-number-of-vowels-in-a-substring-of-given-length.rs"]
 mod s_1456_maximum_number_of_vowels_in_a_substring_of_given_length;
+#[path = "1482_minimum-number-of-days-to-make-m-bouquets.rs"]
+mod s_1482_minimum_number_of_days_to_make_m_bouquets;
 #[path = "1524_number-of-sub-arrays-with-odd-sum.rs"]
 mod s_1524_number_of_sub_arrays_with_odd_sum;
 #[path = "1534_count-good-triplets.rs"]
