@@ -216,6 +216,8 @@ mod s_985_sum_of_even_numbers_after_queries;
 mod s_992_subarrays_with_k_different_integers;
 #[path = "1004_max-consecutive-ones-iii.rs"]
 mod s_1004_max_consecutive_ones_iii;
+#[path = "1007_minimum-domino-rotations-for-equal-row.rs"]
+mod s_1007_minimum_domino_rotations_for_equal_row;
 #[path = "1015_smallest-integer-divisible-by-k.rs"]
 mod s_1015_smallest_integer_divisible_by_k;
 #[path = "1028_recover-a-tree-from-preorder-traversal.rs"]
