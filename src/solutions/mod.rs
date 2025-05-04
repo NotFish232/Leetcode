@@ -232,6 +232,8 @@ mod s_1109_corporate_flight_bookings;
 mod s_1123_lowest_common_ancestor_of_deepest_leaves;
 #[path = "1125_smallest-sufficient-team.rs"]
 mod s_1125_smallest_sufficient_team;
+#[path = "1128_number-of-equivalent-domino-pairs.rs"]
+mod s_1128_number_of_equivalent_domino_pairs;
 #[path = "1143_longest-common-subsequence.rs"]
 mod s_1143_longest_common_subsequence;
 #[path = "1220_count-vowels-permutation.rs"]
