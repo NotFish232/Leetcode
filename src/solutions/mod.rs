@@ -196,6 +196,8 @@ mod s_763_partition_labels;
 mod s_781_rabbits_in_forest;
 #[path = "786_k-th-smallest-prime-fraction.rs"]
 mod s_786_k_th_smallest_prime_fraction;
+#[path = "790_domino-and-tromino-tiling.rs"]
+mod s_790_domino_and_tromino_tiling;
 #[path = "836_rectangle-overlap.rs"]
 mod s_836_rectangle_overlap;
 #[path = "838_push-dominoes.rs"]
