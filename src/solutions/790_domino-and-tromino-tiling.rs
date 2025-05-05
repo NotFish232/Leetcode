@@ -16,8 +16,6 @@ impl Solution {
             dp[i] = ((2 * dp[i - 1]) % Self::MOD + dp[i - 3]) % Self::MOD;
         }
 
-        println!("{dp:?}");
-
         dp[dp.len() - 1]
     }
 }
