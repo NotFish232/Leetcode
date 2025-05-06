@@ -282,6 +282,8 @@ mod s_1780_check_if_number_is_a_sum_of_powers_of_three;
 mod s_1863_sum_of_all_subset_xor_totals;
 #[path = "1910_remove-all-occurrences-of-a-substring.rs"]
 mod s_1910_remove_all_occurrences_of_a_substring;
+#[path = "1920_build-array-from-permutation.rs"]
+mod s_1920_build_array_from_permutation;
 #[path = "1922_count-good-numbers.rs"]
 mod s_1922_count_good_numbers;
 #[path = "1976_number-of-ways-to-arrive-at-destination.rs"]
