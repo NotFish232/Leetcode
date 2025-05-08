@@ -424,6 +424,8 @@ mod s_3280_convert_date_to_binary;
 mod s_3306_count_of_substrings_containing_every_vowel_and_k_consonants_ii;
 #[path = "3341_find-minimum-time-to-reach-last-room-i.rs"]
 mod s_3341_find_minimum_time_to_reach_last_room_i;
+#[path = "3342_find-minimum-time-to-reach-last-room-ii.rs"]
+mod s_3342_find_minimum_time_to_reach_last_room_ii;
 #[path = "3356_zero-array-transformation-ii.rs"]
 mod s_3356_zero_array_transformation_ii;
 #[path = "3375_minimum-operations-to-make-array-values-equal-to-k.rs"]
