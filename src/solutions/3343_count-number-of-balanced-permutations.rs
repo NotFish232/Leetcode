@@ -54,7 +54,7 @@ impl Solution {
             {
                 let even_counts = p_sum - odd_counts;
                 for curr in (max(0, t_sum as i32 - target as i32) as usize
-                    ..=min(t_sum, target) as usize)
+                    ..=min(t_sum, target))
                     .rev()
                 {
                     let mut res = 0;
