@@ -388,6 +388,8 @@ mod s_2845_count_of_interesting_subarrays;
 mod s_2873_maximum_value_of_an_ordered_triplet_i;
 #[path = "2874_maximum-value-of-an-ordered-triplet-ii.rs"]
 mod s_2874_maximum_value_of_an_ordered_triplet_ii;
+#[path = "2918_minimum-equal-sum-of-two-arrays-after-replacing-zeros.rs"]
+mod s_2918_minimum_equal_sum_of_two_arrays_after_replacing_zeros;
 #[path = "2919_minimum-increment-operations-to-make-array-beautiful.rs"]
 mod s_2919_minimum_increment_operations_to_make_array_beautiful;
 #[path = "2962_count-subarrays-where-max-element-appears-at-least-k-times.rs"]
