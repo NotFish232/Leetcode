@@ -268,6 +268,8 @@ mod s_1482_minimum_number_of_days_to_make_m_bouquets;
 mod s_1524_number_of_sub_arrays_with_odd_sum;
 #[path = "1534_count-good-triplets.rs"]
 mod s_1534_count_good_triplets;
+#[path = "1550_three-consecutive-odds.rs"]
+mod s_1550_three_consecutive_odds;
 #[path = "1567_maximum-length-of-subarray-with-positive-product.rs"]
 mod s_1567_maximum_length_of_subarray_with_positive_product;
 #[path = "1665_minimum-initial-energy-to-finish-tasks.rs"]
