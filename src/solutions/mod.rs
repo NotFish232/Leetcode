@@ -298,6 +298,8 @@ mod s_2033_minimum_operations_to_make_a_uni_value_grid;
 mod s_2068_check_whether_two_strings_are_almost_equivalent;
 #[path = "2071_maximum-number-of-tasks-you-can-assign.rs"]
 mod s_2071_maximum_number_of_tasks_you_can_assign;
+#[path = "2094_finding-3-digit-even-numbers.rs"]
+mod s_2094_finding_3_digit_even_numbers;
 #[path = "2108_find-first-palindromic-string-in-the-array.rs"]
 mod s_2108_find_first_palindromic_string_in_the_array;
 #[path = "2115_find-all-possible-recipes-from-given-supplies.rs"]
