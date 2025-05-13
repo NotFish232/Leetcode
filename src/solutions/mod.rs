@@ -428,6 +428,8 @@ mod s_3273_minimum_amount_of_damage_dealt_to_bob;
 mod s_3280_convert_date_to_binary;
 #[path = "3306_count-of-substrings-containing-every-vowel-and-k-consonants-ii.rs"]
 mod s_3306_count_of_substrings_containing_every_vowel_and_k_consonants_ii;
+#[path = "3335_total-characters-in-string-after-transformations-i.rs"]
+mod s_3335_total_characters_in_string_after_transformations_i;
 #[path = "3341_find-minimum-time-to-reach-last-room-i.rs"]
 mod s_3341_find_minimum_time_to_reach_last_room_i;
 #[path = "3342_find-minimum-time-to-reach-last-room-ii.rs"]
