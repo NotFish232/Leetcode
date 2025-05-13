@@ -3,9 +3,9 @@ use crate::stubs::*;
 
 struct Solution;
 
- // start_submission
+// start_submission
 impl Solution {
-    const MOD: i64 = 1_000_000_007;
+    const MOD: i32 = 1_000_000_007;
 
     pub fn length_after_transformations(s: String, t: i32) -> i32 {
         let mut v = [0; 26];
@@ -19,16 +19,16 @@ impl Solution {
             for (i, c) in v.into_iter().enumerate() {
                 if i == 25 {
                     new_v[0] = (new_v[0] + c) % Self::MOD;
-                   new_v[1] = (new_v[1] + c) % Self::MOD;
+                    new_v[1] = (new_v[1] + c) % Self::MOD;
                 } else {
-                   new_v[i + 1] = (new_v[i + 1] + c) % Self::MOD;
+                    new_v[i + 1] = (new_v[i + 1] + c) % Self::MOD;
                 }
             }
 
             v = new_v;
         }
 
-       (v.into_iter().sum::<i64>() % Self::MOD) as i32
+        v.into_iter().fold(0, |acc, x| (acc + x) % Self::MOD)
     }
 }
- // end_submission
+// end_submission
