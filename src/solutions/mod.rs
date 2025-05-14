@@ -430,6 +430,8 @@ mod s_3280_convert_date_to_binary;
 mod s_3306_count_of_substrings_containing_every_vowel_and_k_consonants_ii;
 #[path = "3335_total-characters-in-string-after-transformations-i.rs"]
 mod s_3335_total_characters_in_string_after_transformations_i;
+#[path = "3337_total-characters-in-string-after-transformations-ii.rs"]
+mod s_3337_total_characters_in_string_after_transformations_ii;
 #[path = "3341_find-minimum-time-to-reach-last-room-i.rs"]
 mod s_3341_find_minimum_time_to_reach_last_room_i;
 #[path = "3342_find-minimum-time-to-reach-last-room-ii.rs"]
