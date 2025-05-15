@@ -392,6 +392,8 @@ mod s_2845_count_of_interesting_subarrays;
 mod s_2873_maximum_value_of_an_ordered_triplet_i;
 #[path = "2874_maximum-value-of-an-ordered-triplet-ii.rs"]
 mod s_2874_maximum_value_of_an_ordered_triplet_ii;
+#[path = "2900_longest-unequal-adjacent-groups-subsequence-i.rs"]
+mod s_2900_longest_unequal_adjacent_groups_subsequence_i;
 #[path = "2918_minimum-equal-sum-of-two-arrays-after-replacing-zeros.rs"]
 mod s_2918_minimum_equal_sum_of_two_arrays_after_replacing_zeros;
 #[path = "2919_minimum-increment-operations-to-make-array-beautiful.rs"]
