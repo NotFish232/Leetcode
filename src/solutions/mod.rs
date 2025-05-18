@@ -288,6 +288,8 @@ mod s_1910_remove_all_occurrences_of_a_substring;
 mod s_1920_build_array_from_permutation;
 #[path = "1922_count-good-numbers.rs"]
 mod s_1922_count_good_numbers;
+#[path = "1931_painting-a-grid-with-three-different-colors.rs"]
+mod s_1931_painting_a_grid_with_three_different_colors;
 #[path = "1976_number-of-ways-to-arrive-at-destination.rs"]
 mod s_1976_number_of_ways_to_arrive_at_destination;
 #[path = "1980_find-unique-binary-string.rs"]
