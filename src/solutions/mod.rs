@@ -408,6 +408,8 @@ mod s_2962_count_subarrays_where_max_element_appears_at_least_k_times;
 mod s_2965_find_missing_and_repeated_values;
 #[path = "2999_count-the-number-of-powerful-integers.rs"]
 mod s_2999_count_the_number_of_powerful_integers;
+#[path = "3024_type-of-triangle.rs"]
+mod s_3024_type_of_triangle;
 #[path = "3039_apply-operations-to-make-string-empty.rs"]
 mod s_3039_apply_operations_to_make_string_empty;
 #[path = "3108_minimum-cost-walk-in-weighted-graph.rs"]
