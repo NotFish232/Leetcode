@@ -446,6 +446,8 @@ mod s_3341_find_minimum_time_to_reach_last_room_i;
 mod s_3342_find_minimum_time_to_reach_last_room_ii;
 #[path = "3343_count-number-of-balanced-permutations.rs"]
 mod s_3343_count_number_of_balanced_permutations;
+#[path = "3355_zero-array-transformation-i.rs"]
+mod s_3355_zero_array_transformation_i;
 #[path = "3356_zero-array-transformation-ii.rs"]
 mod s_3356_zero_array_transformation_ii;
 #[path = "3375_minimum-operations-to-make-array-values-equal-to-k.rs"]
