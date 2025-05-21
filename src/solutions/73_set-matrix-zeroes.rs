@@ -5,6 +5,7 @@ struct Solution;
 
 // start_submission
 impl Solution {
+    #[allow(clippy::ptr_arg)]
     pub fn set_zeroes(matrix: &mut Vec<Vec<i32>>) {
         let (has_first_row, has_first_col) = (
             (0..matrix[0].len()).any(|i| matrix[0][i] == 0),
