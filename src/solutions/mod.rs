@@ -102,6 +102,8 @@ mod s_55_jump_game;
 mod s_56_merge_intervals;
 #[path = "66_plus-one.rs"]
 mod s_66_plus_one;
+#[path = "73_set-matrix-zeroes.rs"]
+mod s_73_set_matrix_zeroes;
 #[path = "75_sort-colors.rs"]
 mod s_75_sort_colors;
 #[path = "78_subsets.rs"]
