@@ -452,6 +452,8 @@ mod s_3343_count_number_of_balanced_permutations;
 mod s_3355_zero_array_transformation_i;
 #[path = "3356_zero-array-transformation-ii.rs"]
 mod s_3356_zero_array_transformation_ii;
+#[path = "3362_zero-array-transformation-iii.rs"]
+mod s_3362_zero_array_transformation_iii;
 #[path = "3375_minimum-operations-to-make-array-values-equal-to-k.rs"]
 mod s_3375_minimum_operations_to_make_array_values_equal_to_k;
 #[path = "3392_count-subarrays-of-length-three-with-a-condition.rs"]
