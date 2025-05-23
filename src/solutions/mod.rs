@@ -414,6 +414,8 @@ mod s_2999_count_the_number_of_powerful_integers;
 mod s_3024_type_of_triangle;
 #[path = "3039_apply-operations-to-make-string-empty.rs"]
 mod s_3039_apply_operations_to_make_string_empty;
+#[path = "3068_find-the-maximum-sum-of-node-values.rs"]
+mod s_3068_find_the_maximum_sum_of_node_values;
 #[path = "3108_minimum-cost-walk-in-weighted-graph.rs"]
 mod s_3108_minimum_cost_walk_in_weighted_graph;
 #[path = "3116_kth-smallest-amount-with-single-denomination-combination.rs"]
