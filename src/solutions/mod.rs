@@ -404,6 +404,8 @@ mod s_2901_longest_unequal_adjacent_groups_subsequence_ii;
 mod s_2918_minimum_equal_sum_of_two_arrays_after_replacing_zeros;
 #[path = "2919_minimum-increment-operations-to-make-array-beautiful.rs"]
 mod s_2919_minimum_increment_operations_to_make_array_beautiful;
+#[path = "2942_find-words-containing-character.rs"]
+mod s_2942_find_words_containing_character;
 #[path = "2962_count-subarrays-where-max-element-appears-at-least-k-times.rs"]
 mod s_2962_count_subarrays_where_max_element_appears_at_least_k_times;
 #[path = "2965_find-missing-and-repeated-values.rs"]
