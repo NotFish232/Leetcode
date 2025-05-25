@@ -308,6 +308,8 @@ mod s_2094_finding_3_digit_even_numbers;
 mod s_2108_find_first_palindromic_string_in_the_array;
 #[path = "2115_find-all-possible-recipes-from-given-supplies.rs"]
 mod s_2115_find_all_possible_recipes_from_given_supplies;
+#[path = "2131_longest-palindrome-by-concatenating-two-letter-words.rs"]
+mod s_2131_longest_palindrome_by_concatenating_two_letter_words;
 #[path = "2140_solving-questions-with-brainpower.rs"]
 mod s_2140_solving_questions_with_brainpower;
 #[path = "2145_count-the-hidden-sequences.rs"]
