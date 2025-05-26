@@ -282,6 +282,8 @@ mod s_1718_construct_the_lexicographically_largest_valid_sequence;
 mod s_1749_maximum_absolute_sum_of_any_subarray;
 #[path = "1780_check-if-number-is-a-sum-of-powers-of-three.rs"]
 mod s_1780_check_if_number_is_a_sum_of_powers_of_three;
+#[path = "1857_largest-color-value-in-a-directed-graph.rs"]
+mod s_1857_largest_color_value_in_a_directed_graph;
 #[path = "1863_sum-of-all-subset-xor-totals.rs"]
 mod s_1863_sum_of_all_subset_xor_totals;
 #[path = "1910_remove-all-occurrences-of-a-substring.rs"]

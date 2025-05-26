@@ -25,7 +25,7 @@ impl Solution {
                 *h.entry(w).or_insert(0) += 1;
             }
         }
-
+r
         l + 2 * (h.keys().any(|w| w.as_bytes()[0] == w.as_bytes()[1]) as i32)
     }
 }
