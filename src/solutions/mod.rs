@@ -400,6 +400,8 @@ mod s_2845_count_of_interesting_subarrays;
 mod s_2873_maximum_value_of_an_ordered_triplet_i;
 #[path = "2874_maximum-value-of-an-ordered-triplet-ii.rs"]
 mod s_2874_maximum_value_of_an_ordered_triplet_ii;
+#[path = "2894_divisible-and-non-divisible-sums-difference.rs"]
+mod s_2894_divisible_and_non_divisible_sums_difference;
 #[path = "2900_longest-unequal-adjacent-groups-subsequence-i.rs"]
 mod s_2900_longest_unequal_adjacent_groups_subsequence_i;
 #[path = "2901_longest-unequal-adjacent-groups-subsequence-ii.rs"]
