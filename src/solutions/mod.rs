@@ -342,6 +342,8 @@ mod s_2310_sum_of_numbers_with_units_digit_k;
 mod s_2338_count_the_number_of_ideal_arrays;
 #[path = "2342_max-sum-of-a-pair-with-equal-sum-of-digits.rs"]
 mod s_2342_max_sum_of_a_pair_with_equal_sum_of_digits;
+#[path = "2359_find-closest-node-to-given-two-nodes.rs"]
+mod s_2359_find_closest_node_to_given_two_nodes;
 #[path = "2366_minimum-replacements-to-sort-the-array.rs"]
 mod s_2366_minimum_replacements_to_sort_the_array;
 #[path = "2375_construct-smallest-number-from-di-string.rs"]
