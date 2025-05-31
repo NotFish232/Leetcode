@@ -212,6 +212,8 @@ mod s_873_length_of_longest_fibonacci_subsequence;
 mod s_889_construct_binary_tree_from_preorder_and_postorder_traversal;
 #[path = "898_bitwise-ors-of-subarrays.rs"]
 mod s_898_bitwise_ors_of_subarrays;
+#[path = "909_snakes-and-ladders.rs"]
+mod s_909_snakes_and_ladders;
 #[path = "952_largest-component-size-by-common-factor.rs"]
 mod s_952_largest_component_size_by_common_factor;
 #[path = "985_sum-of-even-numbers-after-queries.rs"]
