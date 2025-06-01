@@ -414,6 +414,8 @@ mod s_2901_longest_unequal_adjacent_groups_subsequence_ii;
 mod s_2918_minimum_equal_sum_of_two_arrays_after_replacing_zeros;
 #[path = "2919_minimum-increment-operations-to-make-array-beautiful.rs"]
 mod s_2919_minimum_increment_operations_to_make_array_beautiful;
+#[path = "2929_distribute-candies-among-children-ii.rs"]
+mod s_2929_distribute_candies_among_children_ii;
 #[path = "2942_find-words-containing-character.rs"]
 mod s_2942_find_words_containing_character;
 #[path = "2962_count-subarrays-where-max-element-appears-at-least-k-times.rs"]
