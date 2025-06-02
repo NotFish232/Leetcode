@@ -116,6 +116,8 @@ mod s_121_best_time_to_buy_and_sell_stock;
 mod s_123_best_time_to_buy_and_sell_stock_iii;
 #[path = "128_longest-consecutive-sequence.rs"]
 mod s_128_longest_consecutive_sequence;
+#[path = "135_candy.rs"]
+mod s_135_candy;
 #[path = "139_word-break.rs"]
 mod s_139_word_break;
 #[path = "144_binary-tree-preorder-traversal.rs"]
