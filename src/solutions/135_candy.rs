@@ -15,7 +15,7 @@ impl Solution {
         }
 
         for i in (0..ratings.len() - 1).rev() {
-            if ratings[i] > ratings[i + 1] {
+            if ratings[i] > ratings[i + 1] && sums[i] <= sums[i + 1] {
                 sums[i] = sums[i + 1] + 1;
             }
         }
