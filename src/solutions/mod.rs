@@ -356,6 +356,8 @@ mod s_2375_construct_smallest_number_from_di_string;
 mod s_2379_minimum_recolors_to_get_k_consecutive_black_blocks;
 #[path = "2401_longest-nice-subarray.rs"]
 mod s_2401_longest_nice_subarray;
+#[path = "2410_maximum-matching-of-players-with-trainers.rs"]
+mod s_2410_maximum_matching_of_players_with_trainers;
 #[path = "2444_count-subarrays-with-fixed-bounds.rs"]
 mod s_2444_count_subarrays_with_fixed_bounds;
 #[path = "2460_apply-operations-to-an-array.rs"]
