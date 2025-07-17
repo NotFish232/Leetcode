@@ -10,8 +10,10 @@ itertools = "0.14.*"
 
 [lints.clippy]
 needless_range_loop = "allow"
-if_same_then_else = "allow"
+collapsible_if = "allow"
 collapsible_else_if = "allow"
+if_same_then_else = "allow"
 too_many_arguments = "allow"
 comparison_chain = "allow"
 nonminimal_bool = "allow"
+manual_is_multiple_of = "allow"
