@@ -1,0 +1,19 @@
+[code]
+editor = "code"
+lang = "rust"
+pick = "${fid}_${slug}"
+edit_code_marker = true
+start_marker = "// start_submission"
+end_marker = "// end_submission"
+inject_before = ["#[allow(unused)]", "use crate::stubs::*;", "", "struct Solution;", ""]
+
+[cookies]
+csrf = "<csrftoken>"
+session = "<LEETCODE_SESSION>"
+site = "leetcode.com"
+
+[storage]
+cache = "problems"
+code = "../code/rust/leetcode/src/solutions"
+root = "~/.leetcode"
+scripts = "scripts"
