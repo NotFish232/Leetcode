@@ -324,6 +324,8 @@ mod s_2145_count_the_hidden_sequences;
 mod s_2154_keep_multiplying_found_values_by_two;
 #[path = "2161_partition-array-according-to-given-pivot.rs"]
 mod s_2161_partition_array_according_to_given_pivot;
+#[path = "2163_minimum-difference-in-sums-after-removal-of-elements.rs"]
+mod s_2163_minimum_difference_in_sums_after_removal_of_elements;
 #[path = "2176_count-equal-and-divisible-pairs-in-an-array.rs"]
 mod s_2176_count_equal_and_divisible_pairs_in_an_array;
 #[path = "2177_find-three-consecutive-integers-that-sum-to-a-given-number.rs"]
