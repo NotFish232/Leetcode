@@ -100,6 +100,10 @@ mod s_53_maximum_subarray;
 mod s_55_jump_game;
 #[path = "56_merge-intervals.rs"]
 mod s_56_merge_intervals;
+#[path = "62_unique-paths.rs"]
+mod s_62_unique_paths;
+#[path = "63_unique-paths-ii.rs"]
+mod s_63_unique_paths_ii;
 #[path = "66_plus-one.rs"]
 mod s_66_plus_one;
 #[path = "73_set-matrix-zeroes.rs"]
@@ -218,6 +222,8 @@ mod s_898_bitwise_ors_of_subarrays;
 mod s_909_snakes_and_ladders;
 #[path = "952_largest-component-size-by-common-factor.rs"]
 mod s_952_largest_component_size_by_common_factor;
+#[path = "980_unique-paths-iii.rs"]
+mod s_980_unique_paths_iii;
 #[path = "985_sum-of-even-numbers-after-queries.rs"]
 mod s_985_sum_of_even_numbers_after_queries;
 #[path = "992_subarrays-with-k-different-integers.rs"]
