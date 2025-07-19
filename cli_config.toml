@@ -14,6 +14,6 @@ site = "leetcode.com"
 
 [storage]
 cache = "problems"
-code = "../code/rust/leetcode/src/solutions"
+code = "~/code/rust/leetcode/src/solutions"
 root = "~/.leetcode"
 scripts = "scripts"
