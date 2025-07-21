@@ -190,6 +190,8 @@ mod s_524_longest_word_in_dictionary_through_deleting;
 mod s_630_course_schedule_iii;
 #[path = "632_smallest-range-covering-elements-from-k-lists.rs"]
 mod s_632_smallest_range_covering_elements_from_k_lists;
+#[path = "665_non-decreasing-array.rs"]
+mod s_665_non_decreasing_array;
 #[path = "668_kth-smallest-number-in-multiplication-table.rs"]
 mod s_668_kth_smallest_number_in_multiplication_table;
 #[path = "712_minimum-ascii-delete-sum-for-two-strings.rs"]
