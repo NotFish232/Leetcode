@@ -172,6 +172,8 @@ mod s_416_partition_equal_subset_sum;
 mod s_446_arithmetic_slices_ii_subsequence;
 #[path = "453_minimum-moves-to-equal-array-elements.rs"]
 mod s_453_minimum_moves_to_equal_array_elements;
+#[path = "458_poor-pigs.rs"]
+mod s_458_poor_pigs;
 #[path = "461_hamming-distance.rs"]
 mod s_461_hamming_distance;
 #[path = "462_minimum-moves-to-equal-array-elements-ii.rs"]
