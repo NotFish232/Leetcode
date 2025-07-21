@@ -178,6 +178,8 @@ mod s_458_poor_pigs;
 mod s_461_hamming_distance;
 #[path = "462_minimum-moves-to-equal-array-elements-ii.rs"]
 mod s_462_minimum_moves_to_equal_array_elements_ii;
+#[path = "464_can-i-win.rs"]
+mod s_464_can_i_win;
 #[path = "475_heaters.rs"]
 mod s_475_heaters;
 #[path = "476_number-complement.rs"]
