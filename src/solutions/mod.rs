@@ -100,6 +100,8 @@ mod s_53_maximum_subarray;
 mod s_55_jump_game;
 #[path = "56_merge-intervals.rs"]
 mod s_56_merge_intervals;
+#[path = "60_permutation-sequence.rs"]
+mod s_60_permutation_sequence;
 #[path = "62_unique-paths.rs"]
 mod s_62_unique_paths;
 #[path = "63_unique-paths-ii.rs"]
@@ -112,6 +114,8 @@ mod s_73_set_matrix_zeroes;
 mod s_75_sort_colors;
 #[path = "78_subsets.rs"]
 mod s_78_subsets;
+#[path = "89_gray-code.rs"]
+mod s_89_gray_code;
 #[path = "94_binary-tree-inorder-traversal.rs"]
 mod s_94_binary_tree_inorder_traversal;
 #[path = "121_best-time-to-buy-and-sell-stock.rs"]
@@ -152,6 +156,8 @@ mod s_213_house_robber_ii;
 mod s_215_kth_largest_element_in_an_array;
 #[path = "239_sliding-window-maximum.rs"]
 mod s_239_sliding_window_maximum;
+#[path = "292_nim-game.rs"]
+mod s_292_nim_game;
 #[path = "300_longest-increasing-subsequence.rs"]
 mod s_300_longest_increasing_subsequence;
 #[path = "307_range-sum-query-mutable.rs"]
@@ -160,6 +166,8 @@ mod s_307_range_sum_query_mutable;
 mod s_309_best_time_to_buy_and_sell_stock_with_cooldown;
 #[path = "319_bulb-switcher.rs"]
 mod s_319_bulb_switcher;
+#[path = "343_integer-break.rs"]
+mod s_343_integer_break;
 #[path = "368_largest-divisible-subset.rs"]
 mod s_368_largest_divisible_subset;
 #[path = "374_guess-number-higher-or-lower.rs"]
@@ -244,8 +252,12 @@ mod s_1004_max_consecutive_ones_iii;
 mod s_1007_minimum_domino_rotations_for_equal_row;
 #[path = "1015_smallest-integer-divisible-by-k.rs"]
 mod s_1015_smallest_integer_divisible_by_k;
+#[path = "1025_divisor-game.rs"]
+mod s_1025_divisor_game;
 #[path = "1028_recover-a-tree-from-preorder-traversal.rs"]
 mod s_1028_recover_a_tree_from_preorder_traversal;
+#[path = "1033_moving-stones-until-consecutive.rs"]
+mod s_1033_moving_stones_until_consecutive;
 #[path = "1079_letter-tile-possibilities.rs"]
 mod s_1079_letter_tile_possibilities;
 #[path = "1092_shortest-common-supersequence.rs"]
@@ -262,6 +274,8 @@ mod s_1128_number_of_equivalent_domino_pairs;
 mod s_1143_longest_common_subsequence;
 #[path = "1220_count-vowels-permutation.rs"]
 mod s_1220_count_vowels_permutation;
+#[path = "1227_airplane-seat-assignment-probability.rs"]
+mod s_1227_airplane_seat_assignment_probability;
 #[path = "1261_find-elements-in-a-contaminated-binary-tree.rs"]
 mod s_1261_find_elements_in_a_contaminated_binary_tree;
 #[path = "1282_group-the-people-given-the-group-size-they-belong-to.rs"]
