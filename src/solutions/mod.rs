@@ -154,6 +154,8 @@ mod s_206_reverse_linked_list;
 mod s_213_house_robber_ii;
 #[path = "215_kth-largest-element-in-an-array.rs"]
 mod s_215_kth_largest_element_in_an_array;
+#[path = "233_number-of-digit-one.rs"]
+mod s_233_number_of_digit_one;
 #[path = "239_sliding-window-maximum.rs"]
 mod s_239_sliding_window_maximum;
 #[path = "292_nim-game.rs"]
