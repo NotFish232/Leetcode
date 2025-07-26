@@ -158,6 +158,8 @@ mod s_300_longest_increasing_subsequence;
 mod s_307_range_sum_query_mutable;
 #[path = "309_best-time-to-buy-and-sell-stock-with-cooldown.rs"]
 mod s_309_best_time_to_buy_and_sell_stock_with_cooldown;
+#[path = "319_bulb-switcher.rs"]
+mod s_319_bulb_switcher;
 #[path = "368_largest-divisible-subset.rs"]
 mod s_368_largest_divisible_subset;
 #[path = "374_guess-number-higher-or-lower.rs"]
@@ -212,6 +214,8 @@ mod s_781_rabbits_in_forest;
 mod s_786_k_th_smallest_prime_fraction;
 #[path = "790_domino-and-tromino-tiling.rs"]
 mod s_790_domino_and_tromino_tiling;
+#[path = "810_chalkboard-xor-game.rs"]
+mod s_810_chalkboard_xor_game;
 #[path = "836_rectangle-overlap.rs"]
 mod s_836_rectangle_overlap;
 #[path = "838_push-dominoes.rs"]
