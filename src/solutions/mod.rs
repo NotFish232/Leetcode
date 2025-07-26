@@ -114,6 +114,10 @@ mod s_73_set_matrix_zeroes;
 mod s_75_sort_colors;
 #[path = "78_subsets.rs"]
 mod s_78_subsets;
+#[path = "84_largest-rectangle-in-histogram.rs"]
+mod s_84_largest_rectangle_in_histogram;
+#[path = "85_maximal-rectangle.rs"]
+mod s_85_maximal_rectangle;
 #[path = "89_gray-code.rs"]
 mod s_89_gray_code;
 #[path = "94_binary-tree-inorder-traversal.rs"]
