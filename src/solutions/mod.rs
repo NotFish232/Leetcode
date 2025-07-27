@@ -526,6 +526,8 @@ mod s_3394_check_if_grid_can_be_cut_into_sections;
 mod s_3396_minimum_number_of_operations_to_make_elements_in_array_distinct;
 #[path = "3474_lexicographically-smallest-generated-string.rs"]
 mod s_3474_lexicographically_smallest_generated_string;
+#[path = "3480_maximize-subarrays-after-removing-one-conflicting-pair.rs"]
+mod s_3480_maximize_subarrays_after_removing_one_conflicting_pair;
 #[path = "3490_count-beautiful-numbers.rs"]
 mod s_3490_count_beautiful_numbers;
 // mod_end
