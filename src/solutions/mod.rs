@@ -222,6 +222,8 @@ mod s_717_1_bit_and_2_bit_characters;
 mod s_719_find_k_th_smallest_pair_distance;
 #[path = "763_partition-labels.rs"]
 mod s_763_partition_labels;
+#[path = "769_max-chunks-to-make-sorted.rs"]
+mod s_769_max_chunks_to_make_sorted;
 #[path = "781_rabbits-in-forest.rs"]
 mod s_781_rabbits_in_forest;
 #[path = "786_k-th-smallest-prime-fraction.rs"]
