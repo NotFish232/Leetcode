@@ -234,6 +234,8 @@ mod s_810_chalkboard_xor_game;
 mod s_836_rectangle_overlap;
 #[path = "838_push-dominoes.rs"]
 mod s_838_push_dominoes;
+#[path = "853_car-fleet.rs"]
+mod s_853_car_fleet;
 #[path = "865_smallest-subtree-with-all-the-deepest-nodes.rs"]
 mod s_865_smallest_subtree_with_all_the_deepest_nodes;
 #[path = "873_length-of-longest-fibonacci-subsequence.rs"]
