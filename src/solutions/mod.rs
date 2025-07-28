@@ -94,6 +94,8 @@ mod s_47_permutations_ii;
 mod s_48_rotate_image;
 #[path = "49_group-anagrams.rs"]
 mod s_49_group_anagrams;
+#[path = "50_powx-n.rs"]
+mod s_50_powx_n;
 #[path = "53_maximum-subarray.rs"]
 mod s_53_maximum_subarray;
 #[path = "55_jump-game.rs"]
