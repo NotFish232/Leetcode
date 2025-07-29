@@ -130,6 +130,8 @@ mod s_89_gray_code;
 mod s_94_binary_tree_inorder_traversal;
 #[path = "121_best-time-to-buy-and-sell-stock.rs"]
 mod s_121_best_time_to_buy_and_sell_stock;
+#[path = "122_best-time-to-buy-and-sell-stock-ii.rs"]
+mod s_122_best_time_to_buy_and_sell_stock_ii;
 #[path = "123_best-time-to-buy-and-sell-stock-iii.rs"]
 mod s_123_best_time_to_buy_and_sell_stock_iii;
 #[path = "128_longest-consecutive-sequence.rs"]
