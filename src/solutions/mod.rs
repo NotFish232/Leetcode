@@ -110,6 +110,8 @@ mod s_62_unique_paths;
 mod s_63_unique_paths_ii;
 #[path = "66_plus-one.rs"]
 mod s_66_plus_one;
+#[path = "70_climbing-stairs.rs"]
+mod s_70_climbing_stairs;
 #[path = "73_set-matrix-zeroes.rs"]
 mod s_73_set_matrix_zeroes;
 #[path = "75_sort-colors.rs"]
