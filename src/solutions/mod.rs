@@ -320,6 +320,8 @@ mod s_1433_check_if_a_string_can_break_another_string;
 mod s_1456_maximum_number_of_vowels_in_a_substring_of_given_length;
 #[path = "1482_minimum-number-of-days-to-make-m-bouquets.rs"]
 mod s_1482_minimum_number_of_days_to_make_m_bouquets;
+#[path = "1503_last-moment-before-all-ants-fall-out-of-a-plank.rs"]
+mod s_1503_last_moment_before_all_ants_fall_out_of_a_plank;
 #[path = "1524_number-of-sub-arrays-with-odd-sum.rs"]
 mod s_1524_number_of_sub_arrays_with_odd_sum;
 #[path = "1534_count-good-triplets.rs"]
