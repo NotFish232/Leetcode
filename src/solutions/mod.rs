@@ -108,6 +108,8 @@ mod s_60_permutation_sequence;
 mod s_62_unique_paths;
 #[path = "63_unique-paths-ii.rs"]
 mod s_63_unique_paths_ii;
+#[path = "64_minimum-path-sum.rs"]
+mod s_64_minimum_path_sum;
 #[path = "66_plus-one.rs"]
 mod s_66_plus_one;
 #[path = "70_climbing-stairs.rs"]
