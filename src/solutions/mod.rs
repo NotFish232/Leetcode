@@ -412,6 +412,8 @@ mod s_2379_minimum_recolors_to_get_k_consecutive_black_blocks;
 mod s_2401_longest_nice_subarray;
 #[path = "2410_maximum-matching-of-players-with-trainers.rs"]
 mod s_2410_maximum_matching_of_players_with_trainers;
+#[path = "2411_smallest-subarrays-with-maximum-bitwise-or.rs"]
+mod s_2411_smallest_subarrays_with_maximum_bitwise_or;
 #[path = "2444_count-subarrays-with-fixed-bounds.rs"]
 mod s_2444_count_subarrays_with_fixed_bounds;
 #[path = "2460_apply-operations-to-an-array.rs"]
