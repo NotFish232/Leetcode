@@ -414,6 +414,8 @@ mod s_2401_longest_nice_subarray;
 mod s_2410_maximum_matching_of_players_with_trainers;
 #[path = "2411_smallest-subarrays-with-maximum-bitwise-or.rs"]
 mod s_2411_smallest_subarrays_with_maximum_bitwise_or;
+#[path = "2419_longest-subarray-with-maximum-bitwise-and.rs"]
+mod s_2419_longest_subarray_with_maximum_bitwise_and;
 #[path = "2444_count-subarrays-with-fixed-bounds.rs"]
 mod s_2444_count_subarrays_with_fixed_bounds;
 #[path = "2460_apply-operations-to-an-array.rs"]
