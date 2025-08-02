@@ -36,4 +36,4 @@ jobs:
       - name: Check Formatting
         run: ./scripts/format.sh && git diff --exit-code
       - name: Check Lints
-        run: ./scripts/linting.sh
+        run: ./scripts/lint.sh

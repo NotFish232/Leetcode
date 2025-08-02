@@ -436,6 +436,8 @@ mod s_2540_minimum_common_value;
 mod s_2551_put_marbles_in_bags;
 #[path = "2560_house-robber-iv.rs"]
 mod s_2560_house_robber_iv;
+#[path = "2561_rearranging-fruits.rs"]
+mod s_2561_rearranging_fruits;
 #[path = "2563_count-the-number-of-fair-pairs.rs"]
 mod s_2563_count_the_number_of_fair_pairs;
 #[path = "2570_merge-two-2d-arrays-by-summing-values.rs"]
