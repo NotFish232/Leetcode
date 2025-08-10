@@ -422,6 +422,8 @@ mod s_2410_maximum_matching_of_players_with_trainers;
 mod s_2411_smallest_subarrays_with_maximum_bitwise_or;
 #[path = "2419_longest-subarray-with-maximum-bitwise-and.rs"]
 mod s_2419_longest_subarray_with_maximum_bitwise_and;
+#[path = "2433_find-the-original-array-of-prefix-xor.rs"]
+mod s_2433_find_the_original_array_of_prefix_xor;
 #[path = "2444_count-subarrays-with-fixed-bounds.rs"]
 mod s_2444_count_subarrays_with_fixed_bounds;
 #[path = "2460_apply-operations-to-an-array.rs"]
