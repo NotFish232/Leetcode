@@ -138,6 +138,8 @@ mod s_123_best_time_to_buy_and_sell_stock_iii;
 mod s_128_longest_consecutive_sequence;
 #[path = "135_candy.rs"]
 mod s_135_candy;
+#[path = "137_single-number-ii.rs"]
+mod s_137_single_number_ii;
 #[path = "139_word-break.rs"]
 mod s_139_word_break;
 #[path = "144_binary-tree-preorder-traversal.rs"]
@@ -170,6 +172,8 @@ mod s_215_kth_largest_element_in_an_array;
 mod s_233_number_of_digit_one;
 #[path = "239_sliding-window-maximum.rs"]
 mod s_239_sliding_window_maximum;
+#[path = "260_single-number-iii.rs"]
+mod s_260_single_number_iii;
 #[path = "292_nim-game.rs"]
 mod s_292_nim_game;
 #[path = "300_longest-increasing-subsequence.rs"]
