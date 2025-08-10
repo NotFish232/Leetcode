@@ -250,6 +250,8 @@ mod s_838_push_dominoes;
 mod s_853_car_fleet;
 #[path = "865_smallest-subtree-with-all-the-deepest-nodes.rs"]
 mod s_865_smallest_subtree_with_all_the_deepest_nodes;
+#[path = "869_reordered-power-of-2.rs"]
+mod s_869_reordered_power_of_2;
 #[path = "873_length-of-longest-fibonacci-subsequence.rs"]
 mod s_873_length_of_longest_fibonacci_subsequence;
 #[path = "889_construct-binary-tree-from-preorder-and-postorder-traversal.rs"]
