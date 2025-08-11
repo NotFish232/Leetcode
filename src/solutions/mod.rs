@@ -424,6 +424,8 @@ mod s_2411_smallest_subarrays_with_maximum_bitwise_or;
 mod s_2419_longest_subarray_with_maximum_bitwise_and;
 #[path = "2433_find-the-original-array-of-prefix-xor.rs"]
 mod s_2433_find_the_original_array_of_prefix_xor;
+#[path = "2438_range-product-queries-of-powers.rs"]
+mod s_2438_range_product_queries_of_powers;
 #[path = "2444_count-subarrays-with-fixed-bounds.rs"]
 mod s_2444_count_subarrays_with_fixed_bounds;
 #[path = "2460_apply-operations-to-an-array.rs"]
