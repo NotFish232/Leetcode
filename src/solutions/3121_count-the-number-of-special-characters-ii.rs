@@ -4,7 +4,7 @@ use crate::stubs::*;
 struct Solution;
 
 // start_submission
-use std::collections::{HashMap, HashSet, hash_map::Entry};
+use std::collections::{hash_map::Entry, HashMap, HashSet};
 
 impl Solution {
     pub fn number_of_special_chars(word: String) -> i32 {

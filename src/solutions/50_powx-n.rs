@@ -19,7 +19,11 @@ impl Solution {
             n /= 2;
         }
 
-        if negative { 1.0 / res } else { res }
+        if negative {
+            1.0 / res
+        } else {
+            res
+        }
     }
 }
 // end_submission

@@ -49,8 +49,7 @@ impl Solution {
             maxs[i] = p_sum;
         }
 
-
-        (n-1..2 * n).map(|i| mins[i] - maxs[i + 1]).min().unwrap()
+        (n - 1..2 * n).map(|i| mins[i] - maxs[i + 1]).min().unwrap()
     }
 }
 // end_submission

@@ -3,7 +3,7 @@ use crate::stubs::*;
 
 struct Solution;
 
- // start_submission
+// start_submission
 impl Solution {
     pub fn build_array(nums: Vec<i32>) -> Vec<i32> {
         let mut v = vec![0; nums.len()];
@@ -15,4 +15,4 @@ impl Solution {
         v
     }
 }
- // end_submission
+// end_submission

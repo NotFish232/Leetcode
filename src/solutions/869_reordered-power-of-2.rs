@@ -14,7 +14,7 @@ impl Solution {
         while 2i32.pow(i) < 10i32.pow(9) {
             let mut v: Vec<_> = 2i32.pow(i).to_string().chars().collect();
             v.sort();
- 
+
             h.insert(v.iter().collect());
 
             i += 1;

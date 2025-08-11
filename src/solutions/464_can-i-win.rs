@@ -4,7 +4,7 @@ use crate::stubs::*;
 struct Solution;
 
 // start_submission
-use std::collections::{HashMap, hash_map::Entry};
+use std::collections::{hash_map::Entry, HashMap};
 
 impl Solution {
     fn result(c: i32, n: i32, mask: i32, dp: &mut HashMap<i32, bool>) -> bool {

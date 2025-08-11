@@ -4,7 +4,7 @@ use crate::stubs::*;
 struct Solution;
 
 // start_submission
-use std::collections::{HashMap, hash_map::Entry};
+use std::collections::{hash_map::Entry, HashMap};
 
 impl Solution {
     fn solve_inclusive(nums: &[i32], min_k: i32, max_k: i32) -> i64 {

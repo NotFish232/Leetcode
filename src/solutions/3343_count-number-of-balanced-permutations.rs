@@ -28,7 +28,6 @@ impl Solution {
 
         let max_odd = n.div_ceil(2);
         let mut comb = vec![vec![0; max_odd + 1]; max_odd + 1];
-        
 
         for i in 0..=max_odd {
             comb[i][i] = 1;
@@ -40,7 +39,7 @@ impl Solution {
 
         let mut f = vec![vec![0; max_odd + 1]; target + 1];
         f[0][0] = 1;
-        
+
         let mut p_sum = 0;
         let mut t_sum = 0;
 
@@ -53,9 +52,8 @@ impl Solution {
                 .rev()
             {
                 let even_counts = p_sum - odd_counts;
-                for curr in (max(0, t_sum as i32 - target as i32) as usize
-                    ..=min(t_sum, target))
-                    .rev()
+                for curr in
+                    (max(0, t_sum as i32 - target as i32) as usize..=min(t_sum, target)).rev()
                 {
                     let mut res = 0;
                     for j in (max(0, counts[i] as i32 - even_counts as i32) as usize

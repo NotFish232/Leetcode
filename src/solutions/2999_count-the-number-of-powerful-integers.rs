@@ -39,7 +39,11 @@ impl Solution {
             idx = lps[idx - 1];
         }
 
-        if s[idx] == d { idx + 1 } else { 0 }
+        if s[idx] == d {
+            idx + 1
+        } else {
+            0
+        }
     }
 
     fn digit_dp(

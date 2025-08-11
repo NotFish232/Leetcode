@@ -5,7 +5,7 @@ struct Solution;
 
 // start_submission
 use std::{
-    cmp::{Reverse, max},
+    cmp::{max, Reverse},
     collections::BinaryHeap,
 };
 

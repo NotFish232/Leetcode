@@ -3,7 +3,7 @@ use crate::stubs::*;
 
 struct Solution;
 
- // start_submission
+// start_submission
 impl Solution {
     pub fn unique_paths(m: i32, n: i32) -> i32 {
         let m = m as usize;
@@ -25,4 +25,4 @@ impl Solution {
         dp[m - 1][n - 1]
     }
 }
- // end_submission
+// end_submission

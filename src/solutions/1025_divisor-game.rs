@@ -3,7 +3,7 @@ use crate::stubs::*;
 
 struct Solution;
 
- // start_submission
+// start_submission
 impl Solution {
     pub fn divisor_game(n: i32) -> bool {
         let mut v = vec![false; n as usize];
@@ -19,6 +19,6 @@ impl Solution {
         }
 
         v[n as usize - 1]
-    }   
+    }
 }
- // end_submission
+// end_submission

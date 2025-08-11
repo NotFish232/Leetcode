@@ -3,7 +3,7 @@ use crate::stubs::*;
 
 struct Solution;
 
- // start_submission
+// start_submission
 impl Solution {
     pub fn get_longest_subsequence(words: Vec<String>, groups: Vec<i32>) -> Vec<String> {
         let mut res = Vec::new();
@@ -26,4 +26,4 @@ impl Solution {
         res
     }
 }
- // end_submission
+// end_submission

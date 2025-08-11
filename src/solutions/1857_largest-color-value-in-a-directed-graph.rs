@@ -51,7 +51,11 @@ impl Solution {
             }
         }
 
-        if seen == n { ans } else { -1 }
+        if seen == n {
+            ans
+        } else {
+            -1
+        }
     }
 }
 // end_submission

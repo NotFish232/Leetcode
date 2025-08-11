@@ -8,7 +8,11 @@ impl Solution {
     pub fn minimum_numbers(mut num: i32, k: i32) -> i32 {
         if k == 0 {
             return if num % 10 == 0 {
-                if num != 0 { 1 } else { 0 }
+                if num != 0 {
+                    1
+                } else {
+                    0
+                }
             } else {
                 -1
             };

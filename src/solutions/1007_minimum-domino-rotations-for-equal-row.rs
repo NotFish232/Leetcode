@@ -11,7 +11,7 @@ impl Solution {
         for i in 1..=6 {
             'out: {
                 let (mut t_count, mut b_count) = (0, 0);
-                
+
                 for (&t, &b) in tops.iter().zip(&bottoms) {
                     if t != i && b != i {
                         break 'out;

@@ -5,7 +5,7 @@ struct Solution;
 
 // start_submission
 use std::{
-    cmp::{Ordering, max},
+    cmp::{max, Ordering},
     iter::repeat_n,
 };
 

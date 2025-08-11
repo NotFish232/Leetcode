@@ -3,7 +3,7 @@ use crate::stubs::*;
 
 struct Solution;
 
- // start_submission
+// start_submission
 impl Solution {
     pub fn poor_pigs(buckets: i32, minutes_to_die: i32, minutes_to_test: i32) -> i32 {
         let num_tests = minutes_to_test / minutes_to_die;
@@ -16,4 +16,4 @@ impl Solution {
         c as i32
     }
 }
- // end_submission
+// end_submission

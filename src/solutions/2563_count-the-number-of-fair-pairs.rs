@@ -22,7 +22,7 @@ impl Solution {
 
         count
     }
-    
+
     pub fn count_fair_pairs(mut nums: Vec<i32>, lower: i32, upper: i32) -> i64 {
         nums.sort();
 

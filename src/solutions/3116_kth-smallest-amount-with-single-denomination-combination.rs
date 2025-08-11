@@ -8,7 +8,11 @@ use itertools::Itertools;
 
 impl Solution {
     fn gcd(a: i64, b: i64) -> i64 {
-        if b != 0 { Self::gcd(b, a % b) } else { a }
+        if b != 0 {
+            Self::gcd(b, a % b)
+        } else {
+            a
+        }
     }
 
     fn lcm(a: i64, b: i64) -> i64 {

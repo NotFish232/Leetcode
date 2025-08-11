@@ -13,7 +13,6 @@ impl Solution {
         for q in queries {
             let (q_v, q_i) = (q[0], q[1] as usize);
 
-
             if nums[q_i] % 2 == 0 {
                 even_sum -= nums[q_i];
             }

@@ -6,7 +6,7 @@ struct Solution;
 // start_submission
 impl Solution {
     const MOD: i64 = 1_000_000_007;
-    
+
     fn mod_pow(mut base: i64, mut exp: i64) -> i64 {
         let mut res = 1;
 

@@ -16,7 +16,7 @@ impl Solution {
                     if i == j || i == k || j == k {
                         continue;
                     }
-                    
+
                     if digits[i] != 0 && digits[k] % 2 == 0 {
                         let d = digits[i] * 100 + digits[j] * 10 + digits[k];
                         h.insert(d);
@@ -28,7 +28,7 @@ impl Solution {
         let mut v: Vec<_> = h.into_iter().collect();
         v.sort();
 
-       v
+        v
     }
 }
 // end_submission

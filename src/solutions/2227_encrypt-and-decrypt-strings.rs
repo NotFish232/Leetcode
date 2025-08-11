@@ -35,7 +35,11 @@ impl Encrypter {
             .map(|c| key_to_val.get(&c).unwrap_or(&String::from("!")).clone())
             .collect();
 
-        if !s.contains('!') { s } else { String::new() }
+        if !s.contains('!') {
+            s
+        } else {
+            String::new()
+        }
     }
 
     fn encrypt(&self, word1: String) -> String {

@@ -6,7 +6,7 @@ struct Solution;
 // start_submission
 use std::{
     cmp::min,
-    collections::{BTreeMap, btree_map::Entry},
+    collections::{btree_map::Entry, BTreeMap},
 };
 
 impl Solution {

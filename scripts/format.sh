@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-cargo fmt
+find src | grep \.rs$ | xargs rustfmt

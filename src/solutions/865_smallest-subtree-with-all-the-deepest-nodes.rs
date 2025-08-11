@@ -5,7 +5,7 @@ struct Solution;
 
 // start_submission
 use std::cell::RefCell;
-use std::cmp::{Ordering, max};
+use std::cmp::{max, Ordering};
 use std::rc::Rc;
 
 impl Solution {

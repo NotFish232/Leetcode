@@ -24,7 +24,7 @@ impl Solution {
                     break;
                 }
             }
-            
+
             s.push((h, initial_i));
         }
 

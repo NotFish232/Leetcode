@@ -6,7 +6,7 @@ struct Solution;
 // start_submission
 use std::{
     cmp::Ordering,
-    collections::{HashMap, hash_map::Entry},
+    collections::{hash_map::Entry, HashMap},
 };
 
 struct Dsu {

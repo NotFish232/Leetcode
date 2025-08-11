@@ -4,7 +4,7 @@ use crate::stubs::*;
 struct Solution;
 
 // start_submission
-use std::collections::{HashMap, hash_map::Entry};
+use std::collections::{hash_map::Entry, HashMap};
 
 impl Solution {
     fn count_of_substrings_at_least(word: &String, k: i32) -> i64 {

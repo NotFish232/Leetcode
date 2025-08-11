@@ -4,7 +4,7 @@ use crate::stubs::*;
 struct Solution;
 
 // start_submission
-use std::collections::{HashMap, hash_map::Entry};
+use std::collections::{hash_map::Entry, HashMap};
 
 impl Solution {
     fn subbarrays_at_least_k(nums: &[i32], k: i32) -> i32 {

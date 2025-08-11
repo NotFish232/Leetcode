@@ -4,7 +4,7 @@ use crate::stubs::*;
 struct Solution;
 
 // start_submission
-use std::collections::{HashMap, VecDeque, hash_map::Entry};
+use std::collections::{hash_map::Entry, HashMap, VecDeque};
 
 impl Solution {
     fn bit_encode(mat: &[Vec<i32>]) -> i32 {
