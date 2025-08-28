@@ -5,7 +5,7 @@ import os
 import re
 
 
-LEETCODE_URL = "https://leetcode.com"
+LEETCODE_DOMAIN_NAME = "eetcode.com"
 
 CSRFTOKEN_KEY = "csrftoken"
 LEETCODE_SESSION_KEY = "LEETCODE_SESSION"
@@ -20,7 +20,7 @@ SESSION_CONFIG_REGEX = re.compile(r"^session = \"<LEETCODE_SESSION>\"$", re.MULT
 
 
 def main() -> None:
-    cj = browser_cookie3.chrome(domain_name="leetcode.com")
+    cj = browser_cookie3.chrome(domain_name=LEETCODE_DOMAIN_NAME)
     cookies = {c.name: c.value for c in cj}
 
     csrftoken = cookies[CSRFTOKEN_KEY]
