@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build Modules
-        run: pip3 install natsort && ./scripts/update_mods.py && git diff --exit-code
+        run: pip install -r requirements.txt && ./scripts/update_mods.py && git diff --exit-code
 
   linting:
     runs-on: ubuntu-latest
