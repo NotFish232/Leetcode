@@ -1,6 +1,6 @@
 [code]
 editor = "code"
-lang = "rust"
+lang = "cpp"
 pick = "${fid}_${slug}"
 edit_code_marker = true
 start_marker = "// start_submission"
@@ -14,6 +14,6 @@ site = "leetcode.com"
 
 [storage]
 cache = "problems"
-code = "../code/rust/leetcode/src/solutions"
+code = "../code/rust/leetcode/src/rust_solutions"
 root = "~/.leetcode"
 scripts = "scripts"

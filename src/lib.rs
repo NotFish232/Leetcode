@@ -1,2 +1,2 @@
-mod solutions;
+mod rust_solutions;
 mod stubs;
