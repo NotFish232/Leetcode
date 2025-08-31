@@ -1,0 +1,5 @@
+#[allow(unused)]
+use crate::stubs::*;
+
+struct Solution;
+

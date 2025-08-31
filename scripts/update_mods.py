@@ -4,9 +4,8 @@ from pathlib import Path
 from natsort import natsorted
 import re
 
-SOLUTION_DIR = "src/solutions/"
-
-MOD_PATH = "src/solutions/mod.rs"
+SOLUTION_DIR = "./src/rust_solutions/"
+MOD_PATH = "./src/rust_solutions/mod.rs"
 
 
 MOD_REGEX = re.compile(r"//\s*mod_start.*//\s*mod_end", re.S)

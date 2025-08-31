@@ -19,6 +19,7 @@
           cargo
           clippy
           rust-analyzer
+          rustfmt
           python.pkgs.venvShellHook
         ];
         venvDir = venv_dir;
