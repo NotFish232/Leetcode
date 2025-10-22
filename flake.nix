@@ -20,6 +20,7 @@
           clippy
           rust-analyzer
           rustfmt
+          python
           python.pkgs.venvShellHook
         ];
         venvDir = venv_dir;
