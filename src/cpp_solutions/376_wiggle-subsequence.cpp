@@ -13,7 +13,6 @@ public:
         el[0][0] = nums[0];
         el[0][1] = nums[0];
 
-
         for (int i = 1; i < nums.size(); ++i) {
             if (nums[i] > el[i - 1][1]) {
                 dp[i][0] = dp[i - 1][1] + 1;

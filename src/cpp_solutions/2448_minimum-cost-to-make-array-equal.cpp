@@ -1,6 +1,5 @@
-#include <vector>
 #include <algorithm>
-
+#include <vector>
 
 using namespace std;
 
@@ -39,7 +38,6 @@ public:
 
             cost_pre_sum += v[i].second;
             cost_post_sum -= v[i].second;
-
         }
 
         return ans;
