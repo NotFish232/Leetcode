@@ -42,7 +42,7 @@ impl STree {
 
         let mut res = 0;
 
-       loop {
+        loop {
             if lp % 2 == 0 {
                 res += self.tree[lp];
                 lp += 1;
@@ -88,7 +88,7 @@ impl Solution {
             l_tree.update(pos, 1);
             r_tree.update(pos, 0);
 
-            let left = if pos > 0 { l_tree.query(0, pos - 1) } else {0 };
+            let left = if pos > 0 { l_tree.query(0, pos - 1) } else { 0 };
             let right = r_tree.query(pos + 1, nums1.len() - 1);
             count += left as i64 * right as i64;
         }

@@ -44,7 +44,7 @@ impl STree {
 
         let mut res = 0;
 
-       loop {
+        loop {
             if lp % 2 == 0 {
                 res += self.v[lp];
                 lp += 1;
