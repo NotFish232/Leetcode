@@ -564,4 +564,6 @@ mod s_3474_lexicographically_smallest_generated_string;
 mod s_3480_maximize_subarrays_after_removing_one_conflicting_pair;
 #[path = "3490_count-beautiful-numbers.rs"]
 mod s_3490_count_beautiful_numbers;
+#[path = "3640_trionic-array-ii.rs"]
+mod s_3640_trionic_array_ii;
 // mod_end
