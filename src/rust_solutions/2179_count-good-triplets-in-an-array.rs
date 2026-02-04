@@ -37,18 +37,23 @@ impl STree {
         }
     }
 
-    fn query(&mut self, idx_1: usize, idx_2: usize) -> i32 {
-        let (mut lp, mut rp) = (self.n + idx_1 - 1, self.n + idx_2);
+    fn query(&self, idx_1: usize, idx_2: usize) -> i32 {
+        let (mut lp, mut rp) = (self.n + idx_1 - 1, self.n + idx_2 - 1);
 
         let mut res = 0;
 
-        while lp < rp {
+       loop {
             if lp % 2 == 0 {
                 res += self.tree[lp];
                 lp += 1;
             }
-            if rp % 2 == 0 {
-                res += self.tree[rp - 1];
+            if rp % 2 == 1 {
+                res += self.tree[rp];
+                rp -= 1;
+            }
+
+            if lp > rp {
+                break;
             }
 
             lp = (lp - 1) / 2;
@@ -83,7 +88,7 @@ impl Solution {
             l_tree.update(pos, 1);
             r_tree.update(pos, 0);
 
-            let left = l_tree.query(0, pos - 1);
+            let left = if pos > 0 { l_tree.query(0, pos - 1) } else {0 };
             let right = r_tree.query(pos + 1, nums1.len() - 1);
             count += left as i64 * right as i64;
         }

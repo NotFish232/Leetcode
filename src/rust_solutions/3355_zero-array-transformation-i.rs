@@ -40,20 +40,26 @@ impl STree {
     }
 
     fn query(&self, idx_1: usize, idx_2: usize) -> i32 {
-        let (mut l_ptr, mut r_ptr) = (self.n + idx_1 - 1, self.n + idx_2);
+        let (mut lp, mut rp) = (self.n + idx_1 - 1, self.n + idx_2 - 1);
+
         let mut res = 0;
 
-        while l_ptr < r_ptr {
-            if l_ptr % 2 == 0 {
-                res += self.v[l_ptr];
-                l_ptr += 1;
+       loop {
+            if lp % 2 == 0 {
+                res += self.v[lp];
+                lp += 1;
             }
-            if r_ptr % 2 == 0 {
-                res += self.v[r_ptr - 1];
+            if rp % 2 == 1 {
+                res += self.v[rp];
+                rp -= 1;
             }
 
-            l_ptr = (l_ptr - 1) / 2;
-            r_ptr = (r_ptr - 1) / 2;
+            if lp > rp {
+                break;
+            }
+
+            lp = (lp - 1) / 2;
+            rp = (rp - 1) / 2;
         }
 
         res
