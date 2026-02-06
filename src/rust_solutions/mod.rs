@@ -552,6 +552,8 @@ mod s_3372_maximize_the_number_of_target_nodes_after_connecting_trees_i;
 mod s_3373_maximize_the_number_of_target_nodes_after_connecting_trees_ii;
 #[path = "3375_minimum-operations-to-make-array-values-equal-to-k.rs"]
 mod s_3375_minimum_operations_to_make_array_values_equal_to_k;
+#[path = "3378_count-connected-components-in-lcm-graph.rs"]
+mod s_3378_count_connected_components_in_lcm_graph;
 #[path = "3392_count-subarrays-of-length-three-with-a-condition.rs"]
 mod s_3392_count_subarrays_of_length_three_with_a_condition;
 #[path = "3394_check-if-grid-can-be-cut-into-sections.rs"]
