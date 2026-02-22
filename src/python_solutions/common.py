@@ -1,7 +1,7 @@
 import math
 from collections import *
-from typing import *
 from heapq import *
+from typing import *
 
 
 class ListNode:

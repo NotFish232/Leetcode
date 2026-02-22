@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-from pathlib import Path
-from natsort import natsorted
 import re
+from pathlib import Path
+
+from natsort import natsorted
 
 SOLUTION_DIR = "./src/rust_solutions/"
 MOD_PATH = "./src/rust_solutions/mod.rs"

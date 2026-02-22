@@ -1,6 +1,7 @@
 from common import *
 
- # start_submission
+
+# start_submission
 class Solution:
     def rearrangeArray(self, nums: List[int]) -> List[int]:
         n = len(nums)
@@ -16,7 +17,8 @@ class Solution:
             else:
                 ans[2 * odd_i + 1] = n
                 odd_i += 1
-        
+
         return ans
-        
- # end_submission
+
+
+# end_submission

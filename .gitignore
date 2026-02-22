@@ -1,5 +1,4 @@
 target/
-venv/
 .direnv/
 .vscode/
 .envrc

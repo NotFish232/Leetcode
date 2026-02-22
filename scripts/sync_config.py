@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-import browser_cookie3  # type: ignore
+import json
 import os
 import re
-import json
-import typer
 
+import browser_cookie3  # type: ignore
+import typer
 
 LEETCODE_DOMAIN_NAME = "leetcode.com"
 
@@ -34,7 +34,7 @@ COMMENT_CONFIG_REGEX = re.compile(r"<COMMENT>")
 EXISTING_LANGUAGE_REGEX = re.compile(r"^lang = \"(\w+)\"$", re.MULTILINE)
 
 
-def main(language: str) -> None:
+def main(language: str | None = None) -> None:
     cj = browser_cookie3.chrome(domain_name=LEETCODE_DOMAIN_NAME)
     cookies = {c.name: c.value for c in cj}
 

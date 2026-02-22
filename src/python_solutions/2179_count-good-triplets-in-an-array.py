@@ -1,5 +1,6 @@
 from common import *
 
+
 # start_submission
 class STree:
     def __init__(self, v):

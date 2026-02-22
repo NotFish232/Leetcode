@@ -10,30 +10,25 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
       python = pkgs.python312;
-      venv_dir = "./venv/";
     in
     {
       devShells.${system}.default = pkgs.mkShell {
         packages = with pkgs; [
+          # Rust deps
           rustc
           cargo
           clippy
           rust-analyzer
           rustfmt
-          python
-          python.pkgs.venvShellHook
-        ];
-        venvDir = venv_dir;
-        postShellHook = ''
-          SENTINEL="${venv_dir}/.installed"
-          REQUIREMENTS="requirements.txt"
 
-          if [ ! -f "$SENTINEL" ] || [ "$REQUIREMENTS" -nt "$SENTINEL" ]; then
-            pip install --upgrade pip
-            pip install -r "$REQUIREMENTS"
-            touch "$SENTINEL"
-          fi
-        '';
+          # Python + Deps
+          python
+          python.pkgs.typer
+          python.pkgs.browser-cookie3
+          python.pkgs.natsort
+          python.pkgs.black
+          python.pkgs.isort
+        ];
       };
     };
 }

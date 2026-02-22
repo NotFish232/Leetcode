@@ -1,5 +1,6 @@
 from common import *
 
+
 # start_submission
 class Solution:
     def maxBottlesDrunk(self, numBottles: int, numExchange: int) -> int:

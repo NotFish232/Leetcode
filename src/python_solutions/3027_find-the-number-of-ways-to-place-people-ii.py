@@ -1,5 +1,6 @@
 from common import *
 
+
 # start_submission
 class Solution:
     def maximumPoints(self, enemyEnergies: List[int], currentEnergy: int) -> int:
