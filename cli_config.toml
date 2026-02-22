@@ -3,8 +3,8 @@ editor = "code"
 lang = "<LANGUAGE>"
 pick = "${fid}_${slug}"
 edit_code_marker = true
-start_marker = "// start_submission"
-end_marker = "// end_submission"
+start_marker = "<COMMENT> start_submission"
+end_marker = "<COMMENT> end_submission"
 inject_before = "<INJECT_BEFORE>"
 
 [cookies]

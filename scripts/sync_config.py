@@ -18,7 +18,7 @@ TARGET_CONFIG_LOCATION = "~/.leetcode/leetcode.toml"
 TARGET_CONFIG_LOCATION = os.path.expanduser(TARGET_CONFIG_LOCATION)
 
 STUBS_LOCATION = "./stubs/"
-CODE_LOCATION = "~/code/rust/leetcode/src/"
+CODE_LOCATION = "~/code/rust/leetcode/src"
 CODE_LOCATION = os.path.expanduser(CODE_LOCATION)
 
 CSRF_CONFIG_REGEX = re.compile(r"^csrf = \"<CSRFTOKEN>\"$", re.MULTILINE)
@@ -29,8 +29,10 @@ INJECT_BEFORE_CONFIG_REGEX = re.compile(
 )
 CODE_LOCATION_CONFIG_REGEX = re.compile(r"^code = \"<CODE_LOCATION>\"$", re.MULTILINE)
 
+COMMENT_CONFIG_REGEX = re.compile(r"<COMMENT>")
 
-def main(language: str = "cpp") -> None:
+
+def main(language: str) -> None:
     cj = browser_cookie3.chrome(domain_name=LEETCODE_DOMAIN_NAME)
     cookies = {c.name: c.value for c in cj}
 
@@ -55,6 +57,8 @@ def main(language: str = "cpp") -> None:
         f"inject_before = {json.dumps(language_stubs)}", content
     )
     content = CODE_LOCATION_CONFIG_REGEX.sub(f'code = "{code_location}"', content)
+
+    content = COMMENT_CONFIG_REGEX.sub("#" if language == "python" else "//", content)
 
     with open(TARGET_CONFIG_LOCATION, "w") as f:
         f.write(content)
