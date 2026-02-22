@@ -1,4 +1,4 @@
-from typing import *
+from common import *
 
 # start_submission
 class Solution(object):
