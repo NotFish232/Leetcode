@@ -32,7 +32,7 @@ CODE_LOCATION_CONFIG_REGEX = re.compile(r"^code = \"<CODE_LOCATION>\"$", re.MULT
 COMMENT_CONFIG_REGEX = re.compile(r"<COMMENT>")
 
 
-def main(language: str) -> None:
+def main(language: str = "rust") -> None:
     cj = browser_cookie3.chrome(domain_name=LEETCODE_DOMAIN_NAME)
     cookies = {c.name: c.value for c in cj}
 
