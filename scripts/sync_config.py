@@ -31,13 +31,24 @@ CODE_LOCATION_CONFIG_REGEX = re.compile(r"^code = \"<CODE_LOCATION>\"$", re.MULT
 
 COMMENT_CONFIG_REGEX = re.compile(r"<COMMENT>")
 
+EXISTING_LANGUAGE_REGEX = re.compile(r"^lang = \"(\w+)\"$", re.MULTILINE)
 
-def main(language: str = "rust") -> None:
+
+def main(language: str) -> None:
     cj = browser_cookie3.chrome(domain_name=LEETCODE_DOMAIN_NAME)
     cookies = {c.name: c.value for c in cj}
 
     csrftoken = cookies[CSRFTOKEN_KEY]
     leetcode_session = cookies[LEETCODE_SESSION_KEY]
+
+    with open(INITIAL_CONFIG_LOCATION, "r") as f:
+        content = f.read()
+
+    # If the language isn't provided, take the language from the current config
+    if language is None and os.path.exists(TARGET_CONFIG_LOCATION):
+        with open(TARGET_CONFIG_LOCATION) as f:
+            if match := re.search(EXISTING_LANGUAGE_REGEX, f.read()):
+                language = match.groups()[0]
 
     language_stubs = []
     if os.path.exists(f"{STUBS_LOCATION}/{language}.txt"):
