@@ -1,5 +1,6 @@
 import math
 import random
+from bisect import *
 from collections import *
 from heapq import *
 from typing import *
