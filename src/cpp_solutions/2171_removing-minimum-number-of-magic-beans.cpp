@@ -15,7 +15,7 @@ public:
 
         vector<LL> r_sum(n + 1);
         for (int i = beans.size() - 1; i >= 0; --i) {
-            r_sum[i] = r_sum[i + 1]  + (LL)beans[i];
+            r_sum[i] = r_sum[i + 1] + (LL)beans[i];
         }
 
         LL l_sum = 0;
