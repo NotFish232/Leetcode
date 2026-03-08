@@ -23,6 +23,7 @@
 
           # Python + Deps
           python
+          python.pkgs.sortedcontainers
           python.pkgs.typer
           python.pkgs.browser-cookie3
           python.pkgs.natsort

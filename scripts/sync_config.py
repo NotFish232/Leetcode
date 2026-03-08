@@ -3,6 +3,7 @@
 import json
 import os
 import re
+from pathlib import Path
 
 import browser_cookie3  # type: ignore
 import typer
@@ -18,7 +19,7 @@ TARGET_CONFIG_LOCATION = "~/.leetcode/leetcode.toml"
 TARGET_CONFIG_LOCATION = os.path.expanduser(TARGET_CONFIG_LOCATION)
 
 STUBS_LOCATION = "./stubs/"
-CODE_LOCATION = "~/code/rust/leetcode/src"
+CODE_LOCATION = f"{Path(__file__).parents[1]}/src"
 CODE_LOCATION = os.path.expanduser(CODE_LOCATION)
 
 CSRF_CONFIG_REGEX = re.compile(r"^csrf = \"<CSRFTOKEN>\"$", re.MULTILINE)
