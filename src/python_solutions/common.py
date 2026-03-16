@@ -3,6 +3,7 @@ import random
 from bisect import *
 from collections import *
 from heapq import *
+from math import *
 from typing import *
 
 from sortedcontainers import *
