@@ -3,8 +3,6 @@
 using namespace std;
 
 // start_submission
-#include <queue>
-
 class Solution {
 public:
     vector<int> mostCompetitive(vector<int> &nums, int k) {
