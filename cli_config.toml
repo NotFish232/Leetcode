@@ -1,5 +1,5 @@
 [code]
-editor = "code"
+editor = "zeditor"
 lang = "<LANGUAGE>"
 pick = "${fid}_${slug}"
 edit_code_marker = true

@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<int> mostCompetitive(vector<int>& nums, int k) {
+    vector<int> mostCompetitive(vector<int> &nums, int k) {
         vector<int> stk;
 
         for (int i = 0; i < nums.size(); ++i) {
