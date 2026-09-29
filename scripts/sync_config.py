@@ -3,6 +3,7 @@
 import json
 import os
 import re
+import sys
 from pathlib import Path
 
 import browser_cookie3  # type: ignore
@@ -36,7 +37,10 @@ EXISTING_LANGUAGE_REGEX = re.compile(r"^lang = \"(\w+)\"$", re.MULTILINE)
 
 
 def main(language: str | None = None) -> None:
-    cj = browser_cookie3.chrome(domain_name=LEETCODE_DOMAIN_NAME)
+    load_cookies = (
+        browser_cookie3.safari if sys.platform == "darwin" else browser_cookie3.chrome
+    )
+    cj = load_cookies(domain_name=LEETCODE_DOMAIN_NAME)
     cookies = {c.name: c.value for c in cj}
 
     csrftoken = cookies[CSRFTOKEN_KEY]
